@@ -1,0 +1,134 @@
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="animated" style="opacity: 0;"><span class="first">Stages</span> <span class="second">Of</span> <span class="third">Business</span></h1>
+  </div>
+
+    <section class="timeline">
+      <ul>
+        <li>
+          <div>
+            <time class="time">Step 1</time>
+            <div>
+              <h1 class="discovery">Idea Stage</h1>
+              <p>
+                At this stage, entrepreneurs have a concept or idea for a product or service. They typically conduct market research, assess the feasibility of their idea, and develop a business plan.
+              </p>
+            
+        </li>
+        <li>
+          <div>
+            <time class="time">Step 2</time>
+            <div>
+              <h1 class="discovery">Pre-Seed Stage</h1>
+              <p>
+                During the pre-seed stage, entrepreneurs often invest their own money or rely on friends and family to fund the initial development of their idea. This stage involves refining the concept, building a minimum viable product (MVP), and validating the market demand.
+              </p>
+            
+        </li>
+        <li>
+          <div>
+            <time class="time">Step 3</time>
+            <div>
+              <h1 class="discovery">Angel Funding</h1>
+              <p>
+                Angel investors are individuals who provide capital to startups in exchange for equity ownership. Angel funding typically occurs in the early stages of a startup's development and helps entrepreneurs raise funds to further develop their product, expand their team, and launch their business.
+              </p>
+            
+        </li>
+        <li>
+          <div>
+            <time class="time">Step 4</time>
+            <div>
+              <h1 class="discovery">Seed Stage</h1>
+              <p>
+                This stage is characterized by the first formal round of investment from venture capitalists or seed funds. Seed funding is typically used to finance product development, hire key team members, and conduct initial marketing efforts. Startups may also receive mentorship and guidance from their investors.
+              </p>
+            
+        </li>
+        <li>
+          <div>
+            <time class="time">Step 5</time>
+            <div>
+              <h1 class="discovery">Product Development</h1>
+              <p>
+                With seed funding in place, entrepreneurs focus on developing and refining their product or service based on customer feedback and market validation. This stage involves conducting user testing, iterating on the product, and preparing for a larger market launch.
+              </p>
+            
+        </li>
+        <li>
+          <div>
+            <time class="time">Step 6</time>
+            <div>
+              <h1 class="discovery">Market Traction</h1>
+              <p>
+                Startups aim to achieve market traction during this stage by acquiring customers, generating revenue, and demonstrating the potential for sustainable growth. The focus is on sales and marketing activities to increase user adoption and establish a solid customer base.
+              </p>
+            
+        </li>
+        <li>
+          <div>
+            <time class="time">Step 7</time>
+            <div>
+              <h1 class="discovery">Series A Funding</h1>
+              <p>
+                Once a startup has achieved significant market traction and has a proven business model, it may seek Series A funding. This funding round involves raising a larger amount of capital from venture capitalists to support scaling the business, expanding into new markets, and further developing the product.
+              </p>
+            
+        </li>
+        
+        <li>
+          <div>
+            <time class="time">Step 8</time>
+            <div>
+              <h1 class="discovery">Success You Seek </h1>
+              <p>
+                Success for startups means achieving sustainable growth, profitability, and market dominance through innovation, customer satisfaction, and effective execution of their business model.
+              </p>
+            
+        </li>
+
+      </ul>
+    </section>
+
+
+<script>
+  var items = document.querySelectorAll(".timeline li");
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function callbackFunc() {
+  for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      if(!items[i].classList.contains("in-view")){
+        items[i].classList.add("in-view");
+      }
+    } else if(items[i].classList.contains("in-view")) {
+        items[i].classList.remove("in-view");
+    }
+  }
+}
+
+ 
+window.addEventListener("load", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
+</script>
+
+
+</body>
+</html>
