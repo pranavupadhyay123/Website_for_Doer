@@ -55,12 +55,12 @@ body {
 
 /* Colors */
 :root {
-  --color-accent-light: rgb(0, 0, 0);
-  --color-accent-dark: #420101;
-  --color-accent-vdark: rgb(0, 0, 0);
-  --color-secondary: #ccc;
+  --color-accent-light: rgb(255, 255, 255);
+  --color-accent-dark: #ffffff;
+  --color-accent-vdark: rgb(255, 255, 255);
+  --color-secondary: #000000;
   --text-color-default: #000000;
-  --text-color-light: #fff;
+  --text-color-light: #ffffff;
 }
 
 /* Font and Text */
@@ -76,7 +76,7 @@ body {
 :root {
   --border-color-default: var(--color-secondary);
   --border-color-accent: var(--color-accent-dark);
-  --bg-color-default: #fff;
+  --bg-color-default: #ffffff;
   --bg-color-dark: #ffffff;
   --bg-color-accent-light: var(--color-accent-light);
   --bg-color-accent-dark: var(--color-accent-dark);
@@ -193,7 +193,7 @@ body a {
   max-height: var(--timeline-icon-dimensions);
   height: auto;
   margin: 0 auto;
-  fill: #fff;
+  fill: #000000;
   transition: opacity var(--transition-duration) var(--transition-timing-function) var(--transition-delay);
 }
 
@@ -369,12 +369,6 @@ body a {
 
 .timeline__slide-content p:last-child {
   margin-bottom: 0;
-}
-
-
-.hello {
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .blue-div {
