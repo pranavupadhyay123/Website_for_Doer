@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
   font-family: "Poppins", sans-serif;
 }
-        
+
 .font-bebas-neue {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 body {
@@ -39,11 +39,12 @@ body {
 }
 
 .heading {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
   color: #000000;
   text-align: center;
 }
+
 .heading-2 {
   font-size: 1.5em;
   font-weight: 700;
@@ -53,17 +54,15 @@ body {
   margin-bottom: 10px;
 }
 
-/* Colors */
 :root {
-  --color-accent-light: rgb(0, 0, 0);
-  --color-accent-dark: #420101;
-  --color-accent-vdark: rgb(0, 0, 0);
-  --color-secondary: #ccc;
+  --color-accent-light: rgb(255, 255, 255);
+  --color-accent-dark: #ffffff;
+  --color-accent-vdark: rgb(255, 255, 255);
+  --color-secondary: #000000;
   --text-color-default: #000000;
-  --text-color-light: #fff;
+  --text-color-light: #ffffff;
 }
 
-/* Font and Text */
 :root {
   --font-size-default: 15px;
   --font-size-lg: 25px;
@@ -72,41 +71,38 @@ body {
   --font-weight-default: var(--font-weight-regular);
 }
 
-/* Borders and Backgrounds */
 :root {
   --border-color-default: var(--color-secondary);
   --border-color-accent: var(--color-accent-dark);
-  --bg-color-default: #fff;
+  --bg-color-default: #ffffff;
   --bg-color-dark: #ffffff;
   --bg-color-accent-light: var(--color-accent-light);
   --bg-color-accent-dark: var(--color-accent-dark);
 }
 
-/* Transitions and Effects */
 :root {
   --transition-duration: 0.2s;
   --transition-timing-function: linear;
   --transition-delay: 0s;
 }
 
-/* General Styles */
 :root {
   --negative-multiplier: -1;
-  --gradient-default: linear-gradient(122deg, var(--color-accent-light) 0%, var(--color-accent-vdark) 100%);
+  --gradient-default: linear-gradient(122deg,
+      var(--color-accent-light) 0%,
+      var(--color-accent-vdark) 100%);
 }
 
-/* Body Links */
 body a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Container */
 .container {
   margin: auto;
+  padding: 30px;
 }
 
-/* Header Button */
 .header__btn {
   transition: all var(--transition-duration) var(--transition-timing-function) var(--transition-delay);
   padding: 10px 20px;
@@ -124,18 +120,15 @@ body a {
   background-color: var(--bg-color-dark);
 }
 
-/* Header Title */
 .header__title {
   margin-bottom: 10px;
   font-weight: var(--font-weight-semibold);
 }
 
-/* Content */
 .content {
   margin: auto;
 }
 
-/* Content Title */
 .content__title {
   margin-bottom: 80px;
   font-size: var(--font-size-lg);
@@ -143,15 +136,17 @@ body a {
   text-align: center;
 }
 
-/* Timeline */
 .timeline {
   --wrapper-width: 900px;
   width: 95%;
   max-width: var(--wrapper-width);
   margin: auto;
+  border-radius: 1rem;
+  border-width: 4px;
+  border-color: white;
+  border-style: solid;
 }
 
-/* Timeline Stepper */
 .timeline__stepper {
   --step-border-width: 3px;
   --offset-to-slider-content: 30px;
@@ -173,18 +168,19 @@ body a {
   --offset-to-slider-content: 50px;
 }
 
-/* Timeline Step */
 .timeline__step {
   position: relative;
   width: 100%;
   cursor: pointer;
+  padding-top: 20px;
+  fill: #000000;
 }
 
-.timeline__step {
-  width: 100%;
+.svgs{
+  display: flex; 
+  justify-content: center; 
 }
 
-/* Timeline Icon */
 .timeline__icon {
   --timeline-icon-dimensions: 45px;
   position: relative;
@@ -193,7 +189,7 @@ body a {
   max-height: var(--timeline-icon-dimensions);
   height: auto;
   margin: 0 auto;
-  fill: #fff;
+  fill: #ff0000;
   transition: opacity var(--transition-duration) var(--transition-timing-function) var(--transition-delay);
 }
 
@@ -207,11 +203,10 @@ body a {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  fill: url(#icon-gradient);
+  fill: white;
   opacity: 0;
 }
 
-/* Timeline Step Title */
 .timeline__step-title {
   --timeline-dot-dimensions: 11px;
   --extra-offset-fox-pixelperfect: -1px;
@@ -237,14 +232,14 @@ body a {
   width: var(--timeline-dot-dimensions);
   height: var(--timeline-dot-dimensions);
   content: "";
-  border-radius: 50%;
+  border-radius: 1px;
 }
 
 .timeline__step-title:before {
   --dot-top-position: calc(var(--timeline-dot-dimensions) / 2 * var(--negative-multiplier) + var(--extra-offset-fox-pixelperfect));
   transform: translate(-50%);
   border: 2px solid var(--border-color-default);
-  border-radius: 50%;
+  border-radius: 1px;
   background-color: #fff;
   z-index: 5;
 }
@@ -253,11 +248,10 @@ body a {
   --timeline-dot-dimensions: 25px;
   --dot-top-position: calc(var(--timeline-dot-dimensions) / 2 * var(--negative-multiplier) + var(--extra-offset-fox-pixelperfect));
   transform: translate(-50%) scale(0);
-  border-radius: 50%;
+  border-radius: 1px;
   background-color: #fff;
 }
 
-/* Timeline Step Active Marker */
 .timeline__step-active-marker {
   --slide-pos-y: none;
   --slide-pos-x: none;
@@ -278,13 +272,14 @@ body a {
   display: block;
 }
 
-/* Active Timeline Step */
 .timeline__step.is-active {
   cursor: default;
+  fill: #fff ;
 }
 
 .timeline__step.is-active .timeline__step-title {
   font-weight: var(--font-weight-semibold);
+  color: #fff;
 }
 
 .timeline__step.is-active .timeline__step-title:before {
@@ -310,12 +305,12 @@ body a {
   opacity: 1;
 }
 
-/* Timeline Slides */
 .timeline__slides {
   position: relative;
   width: 900px;
   max-width: 100%;
   margin: auto;
+  margin-top: 10px;
   height: var(--slides-container-height);
   border-radius: 15px;
   background-color: var(--bg-color-default);
@@ -335,10 +330,9 @@ body a {
   content: "";
   z-index: -1;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  border-radius: 15px;
+  border-radius: 1px;
 }
 
-/* Timeline Slide */
 .timeline__slide {
   position: absolute;
   top: 0;
@@ -371,12 +365,6 @@ body a {
   margin-bottom: 0;
 }
 
-
-.hello {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 .blue-div {
   display: flex;
   justify-content: center;
@@ -396,6 +384,7 @@ body a {
 .text-container h2 {
   color: white;
 }
+
 @media (max-width: 768px) {
   .text-container h1 {
     font-size: 2.5rem;
@@ -422,32 +411,60 @@ body a {
   }
 }
 
-/* Your existing CSS code goes here */
-
-/* Add media query to adjust timeline layout on smaller screens */
 @media screen and (max-width: 768px) {
   .timeline__stepper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Adjust the gap between the items */
+    margin: 0%;
+  }
+
+  .timeline__icon--active {
+    margin: 0%;
+  }
+
+  .timeline__step.is-active {
+    justify-content: center;
+    background-color: #fff;
+    padding-top: 20px;
+  }
+  .timeline__step{
+    padding-top: 20px;
+  }
+
+  .timeline__icon {
+    --timeline-icon-dimensions: 40px;
+    fill: #ffffff;
+  }
+
+  .svgs{
+    width: 30px;
+    height: 30px;
+    display: flex; 
+    justify-content: center; 
+    fill: #000000;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .timeline{
+    border: 0px;
   }
   
-  .timeline__icon {
-    --timeline-icon-dimensions: 40px; /* Decrease the icon size */
+  .timeline__step.highlighted {
+    background-color: white; 
   }
 
   .timeline__step-title {
-    display: none; /* Hide the titles to save space */
+    display: none;
   }
-  
+
   .timeline__slides {
-    --content-offset-x: 20px; /* Decrease the content offset */
-    --content-offset-y: 30px; /* Decrease the content offset */
+    --content-offset-x: 20px;
+    --content-offset-y: 30px;
   }
-  
-  /* Hide the timeline line on smaller screens */
+
   .timeline__step::before {
     display: none;
   }

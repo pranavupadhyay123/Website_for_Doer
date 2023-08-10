@@ -43,10 +43,13 @@ timeline === null || timeline === void 0 ? void 0 : timeline.addEventListener("c
     }
     deactivateSteps();
     activateCurrentStep(currentStep);
+    resetStepHighlights(); // Reset highlights before highlighting again
+    highlightStepsOnLeft(currentStep); // Highlight steps on the left
     recalcStepActiveMarkerProps();
     deactivateSlides();
     activateCurrentSlide();
 });
+
 function deactivateSteps() {
     const steps = document.querySelectorAll(`.${DOM.timelineStep}`);
     steps === null || steps === void 0 ? void 0 : steps.forEach((elem) => elem.classList.remove(`${DOM.timelineStepActive}`));
@@ -66,6 +69,26 @@ function activateCurrentSlide() {
     setSlideContainerHeight(currentSlideHeight);
     currentSlide.classList.add(`${DOM.timelineSlideActive}`);
 }
+
+function resetStepHighlights() {
+    const steps = Array.from(document.querySelectorAll(`.${DOM.timelineStep}`));
+    steps.forEach((step) => {
+        step.classList.remove("highlighted"); // Remove the 'highlighted' class from all steps
+    });
+}
+
+function highlightStepsOnLeft(currentStep) {
+    const { currentStepIndex } = getCurrentStep();
+    if (typeof currentStepIndex !== "number") {
+        return;
+    }
+
+    const steps = Array.from(document.querySelectorAll(`.${DOM.timelineStep}`));
+    for (let i = 0; i <= currentStepIndex; i++) {
+        steps[i].classList.add("highlighted"); // Add the 'highlighted' class to steps on the left
+    }
+}
+
 function createStepActiveMarker() {
     const stepActiveMarker = document.createElement("div");
     stepActiveMarker.classList.add(`${DOM.timelineStepActiveMarker}`);
