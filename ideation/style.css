@@ -239,7 +239,7 @@ body a {
   --dot-top-position: calc(var(--timeline-dot-dimensions) / 2 * var(--negative-multiplier) + var(--extra-offset-fox-pixelperfect));
   transform: translate(-50%);
   border: 2px solid var(--border-color-default);
-  border-radius: 1px;
+  border-radius: 15px;
   background-color: #fff;
   z-index: 5;
 }
@@ -248,7 +248,7 @@ body a {
   --timeline-dot-dimensions: 25px;
   --dot-top-position: calc(var(--timeline-dot-dimensions) / 2 * var(--negative-multiplier) + var(--extra-offset-fox-pixelperfect));
   transform: translate(-50%) scale(0);
-  border-radius: 1px;
+  border-radius: 15px;
   background-color: #fff;
 }
 
