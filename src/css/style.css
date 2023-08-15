@@ -279,21 +279,11 @@ a {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  background: #a64bf4;
-  background: -webkit-linear-gradient(
-    to left,
-    #00dbde,
-    #fc00ff,
-    #00dbde,
-    #fc00ff
-  );
-  background: -o-linear-gradient(to left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: -moz-linear-gradient(to left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: linear-gradient(to left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: #3568f6;
   background-position: 50%;
   background-size: 300%;
   border-radius: 50%;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,7 +361,7 @@ a {
 }
 .messages .body .msg.user {
   background-color: #fff;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgb(0, 0, 0);
   border-radius: 10px 0px 10px 10px;
   color: #000;
   float: right;
@@ -379,7 +369,7 @@ a {
 }
 .botIcon .messages .footer,
 .botSubject > form {
-  box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -1px 3px rgb(0, 0, 0);
   bottom: 0;
   display: -webkit-flex;
   display: -moz-flex;
@@ -446,17 +436,7 @@ a {
   padding: 0;
 }
 .closeBtn {
-  background: #a64bf4;
-  background: -webkit-linear-gradient(
-    right,
-    #00dbde,
-    #fc00ff,
-    #00dbde,
-    #fc00ff
-  );
-  background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: #ffffff;
   background-position: 50%;
   background-size: 300%;
   border-radius: 50%;
@@ -794,9 +774,9 @@ a {
   -webkit-overflow-scrolling: touch;
 }
 .botIcon .Input {
-  background-color: #fff;
-  border-top: 1px solid #e6ebea;
-  color: #96aab4;
+  background-color: #e3f5f4;
+  border-top: 1px solid #8ed5c7;
+  color: #000000;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
   -ms-flex-positive: 0;
@@ -989,16 +969,18 @@ span.avtr figure {
 }
 
 
-/* FAQs */
 #accordion-flush {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%; /* Use full width */
+  max-width: 900px; /* Set maximum width */
+  margin: 10px auto;
+
 }
 
+/* Remove explicit widths for headings and bodies */
 #accordion-flush-heading-1,
 #accordion-flush-heading-2,
 #accordion-flush-heading-3,
@@ -1006,10 +988,7 @@ span.avtr figure {
 #accordion-flush-heading-5,
 #accordion-flush-heading-6,
 #accordion-flush-heading-7,
-#accordion-flush-heading-8 {
-  width: 80%;
-}
-
+#accordion-flush-heading-8,
 #accordion-flush-body-1,
 #accordion-flush-body-2,
 #accordion-flush-body-3,
@@ -1018,10 +997,12 @@ span.avtr figure {
 #accordion-flush-body-6,
 #accordion-flush-body-7,
 #accordion-flush-body-8 {
-  width: 80%;
+  width: 100%; /* Use full width */
 }
 
-
-.contact_image{
-  background-image: url(/src/images/contact.png);
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #accordion-flush {
+    max-width: 100%; /* Set maximum width to full width */
+  }
 }

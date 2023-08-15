@@ -176,49 +176,51 @@
       </div>
     </section>
 
-    <!--scroll to top button-->
-    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-      class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
+    <style>
+      #btn-back-to-top {
+          position: fixed;
+          bottom: 3%;
+          right: 2%;
+          display: none;
+          z-index: 999;
+      }
+  </style>
+  <!--scroll to top button-->
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
+      class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
       id="btn-back-to-top">
       <svg aria-hidden="true" focusable="false" data-prefix="fas"
-        class="w-4 h-4" role="img"
-        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-        <path fill="currentColor"
-          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-        </path>
+          class="w-4 h-4" role="img"
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+              d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+          </path>
       </svg>
-    </button>
+  </button>
 
-    <style>
-    #btn-back-to-top {
-      position: fixed;
-      display: none;
-    }
-  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      $(document).ready(function () {
+          let mybutton = $("#btn-back-to-top");
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    $(document).ready(function () {
-      let mybutton = $("#btn-back-to-top");
+          $(window).scroll(function () {
+              scrollFunction();
+          });
 
-      $(window).scroll(function () {
-        scrollFunction();
+          function scrollFunction() {
+              if ($(window).scrollTop() > 20) {
+                  mybutton.fadeIn();
+              } else {
+                  mybutton.fadeOut();
+              }
+          }
+
+          mybutton.on("click", backToTop);
+
+          function backToTop() {
+              $("html, body").animate({ scrollTop: 0 }, "slow");
+          }
       });
-
-      function scrollFunction() {
-        if ($(window).scrollTop() > 20) {
-          mybutton.fadeIn();
-        } else {
-          mybutton.fadeOut();
-        }
-      }
-
-      mybutton.on("click", backToTop);
-
-      function backToTop() {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-      }
-    });
   </script>
 
     <!-- Chatbot -->
@@ -226,11 +228,11 @@
       <div class="botIconContainer">
         <div class="iconInner">
           <svg xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" fill="#ffffff"
             y="0px"
-            viewBox="0 0 50 62.5" style="enable-background: new 0 0 50 50"
+            viewBox="-10 -6 70 60" style="enable-background: new 0 0 50 50"
             xml:space="preserve">
-            <g>
+            <g stroke="#ffffff" stroke-width="1">
               <path
                 d="M30.521574,32.4607735c-0.6900024,1.9800415-2.9799805,3.3600464-5.5700073,3.3600464   c-2.5899658,0-4.8800049-1.3800049-5.5599976-3.3600464c-0.1099854-0.3099976,0.0599976-0.6599731,0.3699951-0.7699585   c0.3200073-0.1000366,0.6600342,0.0599976,0.7700195,0.3800049c0.5100098,1.5,2.3300171,2.5499878,4.4199829,2.5499878   c2.0900269,0,3.9100342-1.0499878,4.4300537-2.5499878c0.1099854-0.3200073,0.4499512-0.4800415,0.7599487-0.3800049   C30.4615765,31.8008003,30.6216106,32.1507759,30.521574,32.4607735z" />
               <path
@@ -256,7 +258,6 @@
             </div>
             <form id="messenger">
               <div class="Input Input-blank">
-                <!-- 							<textarea name="msg" class="Input_field" placeholder="Send a message..."></textarea> -->
                 <input name="msg" class="Input_field"
                   placeholder="Send a message..." />
                 <button type="submit" class="Input_button Input_button-send">
@@ -265,11 +266,11 @@
                       xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="Group-9-Copy-3" stroke="none" stroke-width="1"
-                        fill="none" fill-rule="evenodd"
+                        fill=""
                         transform="translate(1523.000000, 220.000000) rotate(-270.000000) translate(-1523.000000, -220.000000) translate(1499.000000, 193.000000)">
                         <path
                           d="M5.42994667,44.5306122 L16.5955554,44.5306122 L21.049938,20.423658 C21.6518463,17.1661523 26.3121212,17.1441362 26.9447801,20.3958097 L31.6405465,44.5306122 L42.5313185,44.5306122 L23.9806326,7.0871633 L5.42994667,44.5306122 Z M22.0420732,48.0757124 C21.779222,49.4982538 20.5386331,50.5306122 19.0920112,50.5306122 L1.59009899,50.5306122 C-1.20169244,50.5306122 -2.87079654,47.7697069 -1.64625638,45.2980459 L20.8461928,-0.101616237 C22.1967178,-2.8275701 25.7710778,-2.81438868 27.1150723,-0.101616237 L49.6075215,45.2980459 C5.08414042,47.7885641 49.1422456,50.5306122 46.3613062,50.5306122 L29.1679835,50.5306122 C27.7320366,50.5306122 26.4974445,49.5130766 26.2232033,48.1035608 L24.0760553,37.0678766 L22.0420732,48.0757124 Z"
-                          id="sendicon" fill="#96AAB4" fill-rule="nonzero"></path>
+                          id="sendicon" fill="#1e90ff" fill-rule="nonzero"></path>
                       </g>
                     </svg>
                   </div>
@@ -287,7 +288,7 @@
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1
-            class="sm:text-5xl text-7xl font-medium title-font mb-4 text-white">
+            class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl  title-font mb-4 text-white">
             Impact We Have Created
           </h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -359,7 +360,7 @@
     <section id="services" class="text-gray-400 dark\:bg-gray-900 body-font">
       <div class="container mx-auto">
         <h1
-          class="sm:text-5xl text-7xl font-medium title-font pb-20 text-white text-center">
+          class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl  title-font pb-20 text-white text-center">
           The Range Of Services We Offer
         </h1>
 
@@ -537,7 +538,7 @@
     <!--  -->
     <!-- blog -->
     <section class="text-gray-600 body-font overflow-hidden dark\:bg-gray-900">
-      <h1 class="sm:text-5xl text-7xl font-medium title-font text-white text-center mb-4">Insights and Inspiration</h1>
+      <h1 class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl  title-font text-white text-center mb-4">Insights and Inspiration</h1>
       <p class="text-center text-2xl">Explore Our Blog for Entrepreneurial Tips and Success Stories</p>
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-12">
@@ -664,9 +665,10 @@
     <section>
       <div class="container flow-content">
         <h1
-          class="sm:text-5xl text-7xl font-medium title-font pb-20 text-white text-center">
-          Amazing People Behind The Scene
+          class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl font-medium title-font text-white text-center">
+          Our Team
         </h1>
+        <h6 class="text-2xl font-medium title-font pb-20 text-gray-600 text-center">Amazing People Behind The Scene</h6>
         <ul role="list" class="grid">
           <li>
             <article class="card" data-visible="false">
@@ -844,7 +846,7 @@
                   src="./src/images/main.png"/>
                 <div class="flow-content" data-spacing="sm">
                   <p class="card__name">Pranav Upadhyay</p>
-                  <p class="card__position">Intern</p>
+                  <p class="card__position">Web Developer</p>
                 </div>
               </div>
               <div class="card__back flow-content">
@@ -853,12 +855,12 @@
                   to this project.</q>
                 <ul role="list" class="card__social flex-group">
                   <li>
-                    <a href="#">
+                    <a href="https://twitter.com/PranavU98679758">
                       <i class="fa-brands fa-twitter fa-xl"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/pranav-upadhyay-5a1688219/">
                       <i class="fa-brands fa-linkedin fa-xl"></i>
                     </a>
                   </li>
@@ -1051,7 +1053,7 @@
 
     <!-- FAQ -->
     <h1
-      class="sm:text-5xl text-7xl font-medium title-font pb-20 text-white text-center">
+      class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl font-medium title-font pb-20 text-white text-center">
       Frequently Asked Questions (FAQs)
     </h1>
     <div id="accordion-flush" data-accordion="collapse"
@@ -1059,7 +1061,7 @@
       data-inactive-classes="text-gray-100 dark:text-gray-400">
       <h2 id="accordion-flush-heading-1">
         <button type="button"
-        class="flex items-center justify-between w-full py-5 text-2xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+        class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
           data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
           aria-controls="accordion-flush-body-1">
           <span>What does Doer do?</span>
@@ -1075,7 +1077,7 @@
       <div id="accordion-flush-body-1" class="hidden"
         aria-labelledby="accordion-flush-heading-1">
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 text-xl">
+          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
             Doer is a company that provides guidance, resources, and marketing
             support to new entrepreneurs and startups to help them grow their
             businesses.
@@ -1084,7 +1086,7 @@
       </div>
       <h2 id="accordion-flush-heading-2">
         <button type="button"
-          class="flex items-center justify-between w-full py-5 text-2xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
           data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
           aria-controls="accordion-flush-body-2">
           <span>How do I get started with Doer?</span>
@@ -1100,7 +1102,7 @@
       <div id="accordion-flush-body-2" class="hidden"
         aria-labelledby="accordion-flush-heading-2">
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 text-xl">
+          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
             To get started with Doer, simply visit our website and sign up for
             an account. Once you've created an account, you can explore the
             available resources, access guidance materials, and start utilizing
@@ -1110,7 +1112,7 @@
       </div>
       <h2 id="accordion-flush-heading-3">
         <button type="button"
-          class="flex items-center justify-between w-full py-5 text-2xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
           data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
           aria-controls="accordion-flush-body-3">
           <span>How can Doer help me as a new entrepreneur/startup?</span>
@@ -1126,7 +1128,7 @@
       <div id="accordion-flush-body-3" class="hidden"
         aria-labelledby="accordion-flush-heading-3">
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 text-xl">
+          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
             Doer can assist you in various ways. We offer personalized guidance
             and mentorship to help you navigate the challenges of starting and
             growing a business. Additionally, we provide access to a range of
@@ -1138,7 +1140,7 @@
       </div>
       <h2 id="accordion-flush-heading-4">
         <button type="button"
-          class="flex items-center justify-between w-full py-5 text-2xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
           data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
           aria-controls="accordion-flush-body-4">
           <span>Is Doer only for new entrepreneurs, or can established
@@ -1157,7 +1159,7 @@
       <div id="accordion-flush-body-4" class="hidden"
         aria-labelledby="accordion-flush-heading-4">
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 text-xl">
+          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
             While Doer primarily focuses on assisting new entrepreneurs and
             startups, our services can also benefit established businesses. We
             offer resources and marketing support that can help businesses at
@@ -1167,7 +1169,7 @@
       </div>
       <h2 id="accordion-flush-heading-5">
         <button type="button"
-          class="flex items-center justify-between w-full py-5 text-2xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
           data-accordion-target="#accordion-flush-body-5" aria-expanded="false"
           aria-controls="accordion-flush-body-5">
           <span>What types of businesses does Doer cater to? </span>
@@ -1183,7 +1185,7 @@
       <div id="accordion-flush-body-5" class="hidden"
         aria-labelledby="accordion-flush-heading-5">
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 text-xl">
+          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
             Doer caters to a wide range of businesses across various industries.
             Whether you're starting a tech startup, a retail business, a
             consulting firm, or any other type of business, our guidance and
@@ -1193,7 +1195,7 @@
       </div>
       <h2 id="accordion-flush-heading-6">
         <button type="button"
-          class="flex items-center justify-between w-full py-5 text-2xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
           data-accordion-target="#accordion-flush-body-6" aria-expanded="false"
           aria-controls="accordion-flush-body-6">
           <span>
@@ -1211,7 +1213,7 @@
       <div id="accordion-flush-body-6" class="hidden"
         aria-labelledby="accordion-flush-heading-6">
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 text-xl">
+          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
             Yes, at Doer, we believe in personalized support. Our guidance and
             mentorship programs are designed to address the unique challenges
             and goals of each entrepreneur or startup. We understand that every
@@ -1222,7 +1224,7 @@
       </div>
       <h2 id="accordion-flush-heading-7">
         <button type="button"
-          class="flex items-center justify-between w-full py-5 text-2xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
           data-accordion-target="#accordion-flush-body-7" aria-expanded="false"
           aria-controls="accordion-flush-body-7">
           <span>Can Doer help with funding for my business? </span>
@@ -1238,7 +1240,7 @@
       <div id="accordion-flush-body-7" class="hidden"
         aria-labelledby="accordion-flush-heading-7">
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 text-xl">
+          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
             While Doer does not directly provide funding, we can offer guidance
             on different funding options and connect you with relevant
             resources, such as investors, grants, or crowdfunding platforms.
@@ -1249,7 +1251,7 @@
       </div>
       <h2 id="accordion-flush-heading-8">
         <button type="button"
-          class="flex items-center justify-between w-full py-5 text-2xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
           data-accordion-target="#accordion-flush-body-8" aria-expanded="false"
           aria-controls="accordion-flush-body-8">
           <span>How can I access the marketing services offered by Doer? </span>
@@ -1265,7 +1267,7 @@
       <div id="accordion-flush-body-8" class="hidden"
         aria-labelledby="accordion-flush-heading-8">
         <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 text-xl">
+          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
             Once you become a member of Doer, you'll have access to our
             marketing services. You can discuss your marketing needs with our
             team, and they will work with you to develop a customized marketing
@@ -1278,97 +1280,47 @@
     </div>
 
     <!-- contact us -->
-    <div id="contact_us"
-      class="relative flex items-top justify-center min-h-screen dark\:bg-gray-500 sm:items-center sm:pt-0">
-      <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <div class="mt-8 overflow-hidden">
-          <div class="grid grid-cols-1 md:grid-cols-2">
-            <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
-              <h1
-                class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
-                Get in touch
-              </h1>
-              <p
-                class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
-                We will get you right back
-              </p>
-
-              <div
-                class="flex items-center mt-8 text-gray-600 dark:text-gray-400">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="1.5"
-                  viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                  Acme Inc, Street, State,
-                  Postal Code
-                </div>
-              </div>
-
-              <div
-                class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="1.5"
-                  viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                  +44 1234567890
-                </div>
-              </div>
-
-              <div
-                class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="1.5"
-                  viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="1.5"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <div class="ml-4 text-md tracking-wide font-semibold w-40">
-                  info@acme.org
-                </div>
-              </div>
-            </div>
-
-            <form class="p-6 flex flex-col justify-center">
-              <div class="flex flex-col">
-                <label for="name" class="hidden">Full Name</label>
-                <input type="name" name="name" id="name" placeholder="Full Name"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
-              </div>
-
-              <div class="flex flex-col mt-2">
-                <label for="email" class="hidden">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
-              </div>
-
-              <div class="flex flex-col mt-2">
-                <label for="tel" class="hidden">Number</label>
-                <input type="tel" name="tel" id="tel"
-                  placeholder="Telephone Number"
-                  class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
-              </div>
-
-              <button type="submit"
-                class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
-                Submit
-              </button>
-            </form>
+    <section class="text-gray-600 body-font relative">
+      <div class="container px-5 py-24 mx-auto flex xl:flex-row md:flex-col sm:flex-col flex-col center-content">
+        <div class="lg:w-1/3 md:w-1/2 flex flex-col w-full md:py-8 mt-8 md:mt-0 p-10 bg-gray-800">
+          <h2 class="text-indigo-400 text-4xl mb-1 title-font">Feedback</h2>
+          <p class="leading-relaxed mb-5">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+          <div class="relative mb-4">
+            <label for="name" class="leading-7 text-sm text-white">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
           </div>
+          <div class="relative mb-4">
+            <label for="email" class="leading-7 text-sm text-white">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              style="background-image: url('data:image/png;base64,iVBORw0KG...'); background-repeat: no-repeat; background-size: 20px; background-position: 97% center; cursor: auto;"
+              data-temp-mail-org="0"
+            />
+          </div>
+          <div class="relative mb-4">
+            <label for="message" class="leading-7 text-sm text-white">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            ></textarea>
+          </div>
+          <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+          <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-8">
+          <img src="/src/images/contact.png" alt="Contact Image" class="w-auto h-auto">
         </div>
       </div>
-    </div>
+    </section>
 
     <!--footer-->
     <footer class="text-gray-600 body-font bg-gray-900">
