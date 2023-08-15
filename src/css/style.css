@@ -1020,3 +1020,8 @@ span.avtr figure {
 #accordion-flush-body-8 {
   width: 80%;
 }
+
+
+.contact_image{
+  background-image: url(/src/images/contact.png);
+}
