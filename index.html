@@ -1,137 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doer Global</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doer Global</title>
 
-    <!--tailwind CDN-->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-    <!-- flowbite -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
-    <!--testimonial-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!-- font awesome -->
-    <link rel="stylesheet" href="./src/fontawesome/css/all.css"/>
+  <!--tailwind CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <!-- flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+  <!--testimonial-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="./src/fontawesome/css/all.css" />
 
-  </head>
+</head>
 
-  <body>
-    <!--navbar-->
-    <nav
-      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center">
-          <img src="./src/images/logo.png" class="h-10"/>
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Doer</span>
+<body>
+  <!--navbar-->
+  <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center">
+        <img src="./src/images/logo.png" class="h-10" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Doer</span>
+      </a>
+      <div class="flex md:order-2">
+        <a href="./login/index.html"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          Get started
         </a>
-        <div class="flex md:order-2">
-          <a href="./login/index.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Get started
-          </a>
-          
-          <button data-collapse-toggle="navbar-sticky" type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-sticky" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </button>
-        </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky">
-          <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="#"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                aria-current="page">Home</a>
-            </li>
-            <li>
-              <a href="./ideation/"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Ideation</a>
-            </li>
-            <li>
-              <a href="#services"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-            </li>
-            <li>
-              <a href="#contact_us"
-                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!--hero-->
-    <section id="home" class="overflow-hidden bg-black xl\:max-h-screen">
-      <div class="bg-black">
-        <div
-          class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
-          <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
-          <nav class="relative z-10 px-9 pt-4 bg-black h-full overflow-y-auto">
-            <div class="flex flex-wrap justify-between h-full">
-              <div class="w-full">
-                <div class="flex items-center justify-between -m-2">
-                  <div class="w-auto p-2"></div>
-                  <div class="w-auto p-2">
-                    <a class="navbar-burger text-white" href="#">
-                      <svg width="24" height="24" viewbox="0 0 24 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 18L18 6M6 6L18 18" stroke="currentColor"
-                          stroke-width="2" stroke-linecap="round"
-                          stroke-linejoin="round"></path>
-                      </svg>
-                    </a>
-                  </div>
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="./ideation/"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Ideation</a>
+          </li>
+          <li>
+            <a href="#services"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          </li>
+          <li>
+            <a href="#contact_us"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--hero-->
+  <section id="home" class="overflow-hidden bg-black xl\:max-h-screen">
+    <div class="bg-black">
+      <div class="hidden navbar-menu fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+        <nav class="relative z-10 px-9 pt-4 bg-black h-full overflow-y-auto">
+          <div class="flex flex-wrap justify-between h-full">
+            <div class="w-full">
+              <div class="flex items-center justify-between -m-2">
+                <div class="w-auto p-2"></div>
+                <div class="w-auto p-2">
+                  <a class="navbar-burger text-white" href="#">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <div class="flex flex-col justify-center py-16 w-full"></div>
-              <div class="flex flex-col justify-end w-full pb-8">
-                <a
-                  class="inline-block px-5 py-3 text-white font-semibold text-center tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
-                  href="#">Try 14 Days Free Trial</a>
-              </div>
             </div>
-          </nav>
-        </div>
+            <div class="flex flex-col justify-center py-16 w-full"></div>
+            <div class="flex flex-col justify-end w-full pb-8">
+              <a class="inline-block px-5 py-3 text-white font-semibold text-center tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
+                href="#">Try 14 Days Free Trial</a>
+            </div>
+          </div>
+        </nav>
       </div>
-      <div class="pt-24 lg:pt-24 pb-24 lg:pb-52 bg-black overflow-hidden">
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap -m-8">
-            <div class="w-full md:w-1/2 p-8">
-              <div class="md:max-w-lg">
-                <span
-                  class="inline-block mb-8 px-3 py-1 text-white font-semibold bg-gray-600 rounded-full">#1
-                  Brand Building services</span>
-                <h1
-                  class="font-heading mb-12 text-6xl md:text-7xl text-white tracking-tighter">
-                  Transform Your Startup Vision into Reality with
-                  <span class="text-blue-600 dark:text-blue-500">Doer</span>
-                </h1>
-                <div class="flex flex-wrap mb-14">
-                  <div class="w-full p-2">
-                    <form action method="post" id="revue-form" name="revue-form"
-                      target="_blank"
-                      class="p-2 transition duration-500 ease-in-out transform border2 bg-gray-50 rounded-xl sm:max-w-lg sm:flex"
-                      style="width: 100%">
-                      <div class="flex-1 min-w-0 revue-form-group">
-                        <div class="relative">
-                          <label for="cta-email" class="sr-only">Email address</label>
-                          <input id="cta-email" type="email"
-                            class="block w-full px-5 py-3 text-base text-neutral-600 placeholder-gray-600 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300"
-                            placeholder="Enter your email" style="
+    </div>
+    <div class="pt-24 lg:pt-24 pb-24 lg:pb-52 bg-black overflow-hidden">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -m-8">
+          <div class="w-full md:w-1/2 p-8">
+            <div class="md:max-w-lg">
+              <span class="inline-block mb-8 px-3 py-1 text-white font-semibold bg-gray-600 rounded-full">#1
+                Brand Building services</span>
+              <h1 class="font-heading mb-12 text-6xl md:text-7xl text-white tracking-tighter">
+                Transform Your Startup Vision into Reality with
+                <span class="text-blue-600 dark:text-blue-500">Doer</span>
+              </h1>
+              <div class="flex flex-wrap mb-14">
+                <div class="w-full p-2">
+                  <form action method="post" id="revue-form" name="revue-form" target="_blank"
+                    class="p-2 transition duration-500 ease-in-out transform border2 bg-gray-50 rounded-xl sm:max-w-lg sm:flex"
+                    style="width: 100%">
+                    <div class="flex-1 min-w-0 revue-form-group">
+                      <div class="relative">
+                        <label for="cta-email" class="sr-only">Email address</label>
+                        <input id="cta-email" type="email"
+                          class="block w-full px-5 py-3 text-base text-neutral-600 placeholder-gray-600 transition duration-500 ease-in-out transform bg-transparent border border-transparent rounded-md focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300"
+                          placeholder="Enter your email" style="
                               background-color: rgba(
                                 245,
                                 245,
@@ -143,1238 +131,1146 @@
                               background-position: 97% center;
                               cursor: auto;
                             " data-temp-mail-org="1" />
-                          <button type="submit" value="Subscribe"
-                            name="member[subscribe]" id="member_submit"
-                            class="absolute top-0 right-0 h-full px-5 py-3 text-base font-medium text-white bg-blue-600 border border-transparent rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300">
-                            Notify me
-                          </button>
-                        </div>
+                        <button type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"
+                          class="absolute top-0 right-0 h-full px-5 py-3 text-base font-medium text-white bg-blue-600 border border-transparent rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300">
+                          Notify me
+                        </button>
                       </div>
-                    </form>
-                  </div>
-                </div>
-
-                <div class="max-w-md">
-                  <div class="flex flex-wrap -m-1.5">
-                    <div class="flex-1 p-1.5">
-                      <p class="text-white tracking-tight">
-                        Join other 170k+ successful startups and 21 business
-                        unicorns with us.
-                      </p>
                     </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="max-w-md">
+                <div class="flex flex-wrap -m-1.5">
+                  <div class="flex-1 p-1.5">
+                    <p class="text-white tracking-tight">
+                      Join other 170k+ successful startups and 21 business
+                      unicorns with us.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-2/4">
-              <img
-                class="transform hover:-translate-y-2 transition duration-500"
-                src="./src/images/hero_image.png" alt />
-            </div>
+          </div>
+          <div class="w-full md:w-2/4">
+            <img class="transform hover:-translate-y-2 transition duration-500" src="./src/images/hero_image.png" alt />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <style>
-      #btn-back-to-top {
-          position: fixed;
-          bottom: 3%;
-          right: 2%;
-          display: none;
-          z-index: 999;
-      }
+  <style>
+    #btn-back-to-top {
+      position: fixed;
+      bottom: 3%;
+      right: 2%;
+      display: none;
+      z-index: 999;
+    }
   </style>
   <!--scroll to top button-->
   <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-      class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-      id="btn-back-to-top">
-      <svg aria-hidden="true" focusable="false" data-prefix="fas"
-          class="w-4 h-4" role="img"
-          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path fill="currentColor"
-              d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-          </path>
-      </svg>
+    class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+    id="btn-back-to-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+      <path fill="currentColor"
+        d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+      </path>
+    </svg>
   </button>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-      $(document).ready(function () {
-          let mybutton = $("#btn-back-to-top");
+    $(document).ready(function () {
+      let mybutton = $("#btn-back-to-top");
 
-          $(window).scroll(function () {
-              scrollFunction();
-          });
-
-          function scrollFunction() {
-              if ($(window).scrollTop() > 20) {
-                  mybutton.fadeIn();
-              } else {
-                  mybutton.fadeOut();
-              }
-          }
-
-          mybutton.on("click", backToTop);
-
-          function backToTop() {
-              $("html, body").animate({ scrollTop: 0 }, "slow");
-          }
+      $(window).scroll(function () {
+        scrollFunction();
       });
+
+      function scrollFunction() {
+        if ($(window).scrollTop() > 20) {
+          mybutton.fadeIn();
+        } else {
+          mybutton.fadeOut();
+        }
+      }
+
+      mybutton.on("click", backToTop);
+
+      function backToTop() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+      }
+    });
   </script>
 
-    <!-- Chatbot -->
-    <div class="botIcon">
-      <div class="botIconContainer">
-        <div class="iconInner">
-          <svg xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" fill="#ffffff"
-            y="0px"
-            viewBox="-10 -6 70 60" style="enable-background: new 0 0 50 50"
-            xml:space="preserve">
-            <g stroke="#ffffff" stroke-width="1">
-              <path
-                d="M30.521574,32.4607735c-0.6900024,1.9800415-2.9799805,3.3600464-5.5700073,3.3600464   c-2.5899658,0-4.8800049-1.3800049-5.5599976-3.3600464c-0.1099854-0.3099976,0.0599976-0.6599731,0.3699951-0.7699585   c0.3200073-0.1000366,0.6600342,0.0599976,0.7700195,0.3800049c0.5100098,1.5,2.3300171,2.5499878,4.4199829,2.5499878   c2.0900269,0,3.9100342-1.0499878,4.4300537-2.5499878c0.1099854-0.3200073,0.4499512-0.4800415,0.7599487-0.3800049   C30.4615765,31.8008003,30.6216106,32.1507759,30.521574,32.4607735z" />
-              <path
-                d="M20.941618,25.7107735c0.0599976,0.3200073-0.1500244,0.6400146-0.4700317,0.7000122   c-0.039978,0.0100098-0.0800171,0.0200195-0.1199951,0.0200195c-0.2800293,0-0.5300293-0.2000122-0.5900269-0.4800415   c-0.2999878-1.4599609-1.2599487-2.4799805-2.3499756-2.4799805s-2.0599976,1.0200195-2.3499756,2.4799805   c-0.0700073,0.3200073-0.3900146,0.5300293-0.710022,0.460022c-0.3300171-0.0599976-0.539978-0.3800049-0.4699707-0.7000122   c0.4099731-2.0299683,1.8599854-3.4400024,3.5299683-3.4400024S20.5315838,23.6808052,20.941618,25.7107735z" />
-              <path
-                d="M35.3616028,26.4107857c-0.0400391,0.0100098-0.0800171,0.0200195-0.1199951,0.0200195   c-0.2800293,0-0.5300293-0.2000122-0.5800171-0.4800415c-0.2999878-1.4599609-1.2700195-2.4799805-2.3499756-2.4799805   c-1.0900288,0-2.0599995,1.0200195-2.3600483,2.4799805c-0.0599976,0.3200073-0.3899536,0.5300293-0.6999512,0.460022   c-0.3300171-0.0599976-0.5400391-0.3800049-0.4700317-0.7000122c0.4100342-2.0299683,1.8599854-3.4400024,3.5300312-3.4400024   c1.6599731,0,3.1099854,1.4100342,3.5199585,3.4400024C35.9015808,26.0307808,35.6916199,26.3507881,35.3616028,26.4107857z" />
-              <path
-                d="M45.4615784,23.770771c-0.0899658-0.0199585-0.1799927-0.0299683-0.2699585-0.039978v-2.4799805   c0-4.4100342-3.9200439-8-8.7400513-8h-7.5199604v-0.5100098c0-1.1000366-0.9000244-2.0100098-2.0100098-2.0100098h-1.5700073   v-0.2600098c0-0.1900024-0.1099854-0.3699951-0.2800293-0.4500122L24.3816204,9.690815l2.8599854-0.5500488   c0.2299805-0.039978,0.3900146-0.2299805,0.4099731-0.4599609c0.0100098-0.2300415-0.1400146-0.4400024-0.3599854-0.5   L25.1715984,7.520771c1.3699951-0.2399902,2.4099731-1.4299927,2.4099731-2.8699951   c0-1.6099854-1.3099976-2.9199829-2.9199829-2.9199829s-2.9199829,1.3099974-2.9199829,2.9199829   c0,1.4299927,1.039978,2.6300049,2.3999634,2.8699951l0.0400391,0.4100342   c0.0100098,0.2099609,0.1499634,0.3800049,0.3499756,0.4400024l0.5499878,0.1699829l-2.3899536,0.460022   c-0.210022,0.039978-0.3800049,0.2099609-0.4000244,0.4299927c-0.0300293,0.2099609,0.0800171,0.4199829,0.2799683,0.5100098   l1.6500244,0.789978h-1.2299805c-1.1099854,0-2.0100098,0.9099731-2.0100098,2.0100098v0.5100098h-7.5200195   c-4.8200073,0-8.7399902,3.5899658-8.7399902,8v2.5c-0.039978,0-0.0700073,0.0099487-0.1099854,0.0199585   c-1.960022,0.3300171-3.3800049,2.0300293-3.3800049,4.0200195c0,1.2299805,0.539978,2.3400269,1.409973,3.0900269   c-0.2199707,0.6699829-0.4499512,1.9599609,0.3300171,3.2799683c0.4700317,0.7999878,1.2299805,1.4700317,2.2800293,1.9899902   c1.2299805,3.0700073,4.4400024,5.2600098,8.2099609,5.2600098h5.2300415c0.1499634,0,0.2599487,0.1600342,0.2099609,0.2999878   c-0.7399902,1.7300415-2.2299805,2.9899902-2.9199829,4.0200195c-0.210022,0.3099976-0.1799927,0.710022,0.0700073,0.9799805   c0.1799927,0.2399902,0.4799805,0.3699951,0.789978,0.3699951c0.0800171,0.0100098,0.1699829,0.0100098,0.25,0   c3.8900146-0.8299561,7.9100342-4.1099854,8.9299927-5.5999756c0.0300293-0.039978,0.0800171-0.0700073,0.1400146-0.0700073   h10.2899799c4.8200073,0,8.7400513-3.5899658,8.7400513-8v-1.5599976c0.0899658-0.0100098,0.1699829-0.0299683,0.25-0.039978   c1.9599609-0.3400269,3.3799438-2.0300293,3.3799438-4.0200195S47.4015808,24.1007881,45.4615784,23.770771z M24.6615887,6.270771   c-0.8900146,0-1.6099854-0.7299805-1.6099854-1.6199951s0.7199707-1.6199951,1.6099854-1.6199951   s1.6199951,0.7299805,1.6199951,1.6199951S25.5516033,6.270771,24.6615887,6.270771z M2.5315838,27.7907906   c0-1.3200073,0.9100342-2.4400024,2.1900024-2.7199707v5.4299927C3.4515667,30.230793,2.5315838,29.1007881,2.5315838,27.7907906z    M4.1015911,33.5107613c-0.4400024-0.7299805-0.4099731-1.4499512-0.3099976-1.9299927   c0.25,0.1000366,0.5100098,0.1700439,0.789978,0.2200317c0.0500488,0.0100098,0.0900269,0.0200195,0.1400146,0.0200195v1.5899658   c0,0.2999878,0.0200195,0.5999756,0.0599976,0.8900146C4.4715862,34.0307808,4.2516155,33.770771,4.1015911,33.5107613z    M22.2815838,12.7408028c0-0.3900146,0.3200073-0.710022,0.710022-0.710022h3.9299927   c0.3900146,0,0.710022,0.3200073,0.710022,0.710022v0.5100098h-5.3500366V12.7408028z M43.891571,33.4107857   c0,3.7600098-3.3399658,6.8099976-7.4400024,6.8099976H25.9015789c-0.3800049,0-0.7299805,0.1799927-0.9599609,0.4899902   c-0.7000122,0.9500122-2.6700439,3.1100464-7.1300049,4.9500122c-0.1400146,0.0599976-0.2700195-0.1199951-0.1700439-0.2299805   c3.0400391-3.4899902,3.0200195-4.75,2.9000244-5.0800171c-0.0200195-0.0599976-0.1699829-0.1500244-0.2399902-0.1500244   l-6.8400269,0.0200195c-2.7199707,0-5.1099854-1.3399658-6.3999634-3.3499756   c1.7799683,0.539978,4.0700073,0.8499756,6.8499756,0.9099731c0.2299805,0.4700317,0.710022,0.7999878,1.2700195,0.7999878   h1.2699585c0.7800293,0,1.4100342-0.6300049,1.4100342-1.4099731c0-0.7800293-0.6300049-1.4100342-1.4100342-1.4100342h-1.2699585   c-0.5300293,0-0.9899902,0.2900391-1.2300415,0.7200317c-3.7599487-0.0800171-6.1499634-0.5999756-7.6599731-1.2600098   c-0.1799927-0.5800171-0.2700195-1.1799927-0.2700195-1.8099976V21.2508125c0-3.75,3.3400269-6.8099976,7.4400024-6.8099976   h22.9899921c4.1000366,0,7.4400024,3.0599976,7.4400024,6.8099976V33.4107857z M45.1916199,30.5307808v-5.4799805h0.0299683   c1.3300171,0.2299805,2.2999878,1.3800049,2.2999878,2.7399902C47.5215759,29.1407661,46.5516052,30.3008003,45.1916199,30.5307808   z" />
-            </g>
-          </svg>
+  <!-- Chatbot -->
+  <div class="botIcon">
+    <div class="botIconContainer">
+      <div class="iconInner">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+          fill="#ffffff" y="0px" viewBox="-10 -6 70 60" style="enable-background: new 0 0 50 50" xml:space="preserve">
+          <g stroke="#ffffff" stroke-width="1">
+            <path
+              d="M30.521574,32.4607735c-0.6900024,1.9800415-2.9799805,3.3600464-5.5700073,3.3600464   c-2.5899658,0-4.8800049-1.3800049-5.5599976-3.3600464c-0.1099854-0.3099976,0.0599976-0.6599731,0.3699951-0.7699585   c0.3200073-0.1000366,0.6600342,0.0599976,0.7700195,0.3800049c0.5100098,1.5,2.3300171,2.5499878,4.4199829,2.5499878   c2.0900269,0,3.9100342-1.0499878,4.4300537-2.5499878c0.1099854-0.3200073,0.4499512-0.4800415,0.7599487-0.3800049   C30.4615765,31.8008003,30.6216106,32.1507759,30.521574,32.4607735z" />
+            <path
+              d="M20.941618,25.7107735c0.0599976,0.3200073-0.1500244,0.6400146-0.4700317,0.7000122   c-0.039978,0.0100098-0.0800171,0.0200195-0.1199951,0.0200195c-0.2800293,0-0.5300293-0.2000122-0.5900269-0.4800415   c-0.2999878-1.4599609-1.2599487-2.4799805-2.3499756-2.4799805s-2.0599976,1.0200195-2.3499756,2.4799805   c-0.0700073,0.3200073-0.3900146,0.5300293-0.710022,0.460022c-0.3300171-0.0599976-0.539978-0.3800049-0.4699707-0.7000122   c0.4099731-2.0299683,1.8599854-3.4400024,3.5299683-3.4400024S20.5315838,23.6808052,20.941618,25.7107735z" />
+            <path
+              d="M35.3616028,26.4107857c-0.0400391,0.0100098-0.0800171,0.0200195-0.1199951,0.0200195   c-0.2800293,0-0.5300293-0.2000122-0.5800171-0.4800415c-0.2999878-1.4599609-1.2700195-2.4799805-2.3499756-2.4799805   c-1.0900288,0-2.0599995,1.0200195-2.3600483,2.4799805c-0.0599976,0.3200073-0.3899536,0.5300293-0.6999512,0.460022   c-0.3300171-0.0599976-0.5400391-0.3800049-0.4700317-0.7000122c0.4100342-2.0299683,1.8599854-3.4400024,3.5300312-3.4400024   c1.6599731,0,3.1099854,1.4100342,3.5199585,3.4400024C35.9015808,26.0307808,35.6916199,26.3507881,35.3616028,26.4107857z" />
+            <path
+              d="M45.4615784,23.770771c-0.0899658-0.0199585-0.1799927-0.0299683-0.2699585-0.039978v-2.4799805   c0-4.4100342-3.9200439-8-8.7400513-8h-7.5199604v-0.5100098c0-1.1000366-0.9000244-2.0100098-2.0100098-2.0100098h-1.5700073   v-0.2600098c0-0.1900024-0.1099854-0.3699951-0.2800293-0.4500122L24.3816204,9.690815l2.8599854-0.5500488   c0.2299805-0.039978,0.3900146-0.2299805,0.4099731-0.4599609c0.0100098-0.2300415-0.1400146-0.4400024-0.3599854-0.5   L25.1715984,7.520771c1.3699951-0.2399902,2.4099731-1.4299927,2.4099731-2.8699951   c0-1.6099854-1.3099976-2.9199829-2.9199829-2.9199829s-2.9199829,1.3099974-2.9199829,2.9199829   c0,1.4299927,1.039978,2.6300049,2.3999634,2.8699951l0.0400391,0.4100342   c0.0100098,0.2099609,0.1499634,0.3800049,0.3499756,0.4400024l0.5499878,0.1699829l-2.3899536,0.460022   c-0.210022,0.039978-0.3800049,0.2099609-0.4000244,0.4299927c-0.0300293,0.2099609,0.0800171,0.4199829,0.2799683,0.5100098   l1.6500244,0.789978h-1.2299805c-1.1099854,0-2.0100098,0.9099731-2.0100098,2.0100098v0.5100098h-7.5200195   c-4.8200073,0-8.7399902,3.5899658-8.7399902,8v2.5c-0.039978,0-0.0700073,0.0099487-0.1099854,0.0199585   c-1.960022,0.3300171-3.3800049,2.0300293-3.3800049,4.0200195c0,1.2299805,0.539978,2.3400269,1.409973,3.0900269   c-0.2199707,0.6699829-0.4499512,1.9599609,0.3300171,3.2799683c0.4700317,0.7999878,1.2299805,1.4700317,2.2800293,1.9899902   c1.2299805,3.0700073,4.4400024,5.2600098,8.2099609,5.2600098h5.2300415c0.1499634,0,0.2599487,0.1600342,0.2099609,0.2999878   c-0.7399902,1.7300415-2.2299805,2.9899902-2.9199829,4.0200195c-0.210022,0.3099976-0.1799927,0.710022,0.0700073,0.9799805   c0.1799927,0.2399902,0.4799805,0.3699951,0.789978,0.3699951c0.0800171,0.0100098,0.1699829,0.0100098,0.25,0   c3.8900146-0.8299561,7.9100342-4.1099854,8.9299927-5.5999756c0.0300293-0.039978,0.0800171-0.0700073,0.1400146-0.0700073   h10.2899799c4.8200073,0,8.7400513-3.5899658,8.7400513-8v-1.5599976c0.0899658-0.0100098,0.1699829-0.0299683,0.25-0.039978   c1.9599609-0.3400269,3.3799438-2.0300293,3.3799438-4.0200195S47.4015808,24.1007881,45.4615784,23.770771z M24.6615887,6.270771   c-0.8900146,0-1.6099854-0.7299805-1.6099854-1.6199951s0.7199707-1.6199951,1.6099854-1.6199951   s1.6199951,0.7299805,1.6199951,1.6199951S25.5516033,6.270771,24.6615887,6.270771z M2.5315838,27.7907906   c0-1.3200073,0.9100342-2.4400024,2.1900024-2.7199707v5.4299927C3.4515667,30.230793,2.5315838,29.1007881,2.5315838,27.7907906z    M4.1015911,33.5107613c-0.4400024-0.7299805-0.4099731-1.4499512-0.3099976-1.9299927   c0.25,0.1000366,0.5100098,0.1700439,0.789978,0.2200317c0.0500488,0.0100098,0.0900269,0.0200195,0.1400146,0.0200195v1.5899658   c0,0.2999878,0.0200195,0.5999756,0.0599976,0.8900146C4.4715862,34.0307808,4.2516155,33.770771,4.1015911,33.5107613z    M22.2815838,12.7408028c0-0.3900146,0.3200073-0.710022,0.710022-0.710022h3.9299927   c0.3900146,0,0.710022,0.3200073,0.710022,0.710022v0.5100098h-5.3500366V12.7408028z M43.891571,33.4107857   c0,3.7600098-3.3399658,6.8099976-7.4400024,6.8099976H25.9015789c-0.3800049,0-0.7299805,0.1799927-0.9599609,0.4899902   c-0.7000122,0.9500122-2.6700439,3.1100464-7.1300049,4.9500122c-0.1400146,0.0599976-0.2700195-0.1199951-0.1700439-0.2299805   c3.0400391-3.4899902,3.0200195-4.75,2.9000244-5.0800171c-0.0200195-0.0599976-0.1699829-0.1500244-0.2399902-0.1500244   l-6.8400269,0.0200195c-2.7199707,0-5.1099854-1.3399658-6.3999634-3.3499756   c1.7799683,0.539978,4.0700073,0.8499756,6.8499756,0.9099731c0.2299805,0.4700317,0.710022,0.7999878,1.2700195,0.7999878   h1.2699585c0.7800293,0,1.4100342-0.6300049,1.4100342-1.4099731c0-0.7800293-0.6300049-1.4100342-1.4100342-1.4100342h-1.2699585   c-0.5300293,0-0.9899902,0.2900391-1.2300415,0.7200317c-3.7599487-0.0800171-6.1499634-0.5999756-7.6599731-1.2600098   c-0.1799927-0.5800171-0.2700195-1.1799927-0.2700195-1.8099976V21.2508125c0-3.75,3.3400269-6.8099976,7.4400024-6.8099976   h22.9899921c4.1000366,0,7.4400024,3.0599976,7.4400024,6.8099976V33.4107857z M45.1916199,30.5307808v-5.4799805h0.0299683   c1.3300171,0.2299805,2.2999878,1.3800049,2.2999878,2.7399902C47.5215759,29.1407661,46.5516052,30.3008003,45.1916199,30.5307808   z" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="Layout Layout-open Layout-expand Layout-right">
+      <div class="Messenger_messenger">
+        <div class="Messenger_header">
+          <h4 class="Messenger_prompt">How can we help you?</h4>
+          <span class="chat_close_icon"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+        </div>
+        <div class="Messenger_content">
+          <div class="Messages">
+            <div class="Messages_list"></div>
+          </div>
+          <form id="messenger">
+            <div class="Input Input-blank">
+              <input name="msg" class="Input_field" placeholder="Send a message..." />
+              <button type="submit" class="Input_button Input_button-send">
+                <div class="Icon">
+                  <svg viewBox="1496 193 57 54" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Group-9-Copy-3" stroke="none" stroke-width="1" fill=""
+                      transform="translate(1523.000000, 220.000000) rotate(-270.000000) translate(-1523.000000, -220.000000) translate(1499.000000, 193.000000)">
+                      <path
+                        d="M5.42994667,44.5306122 L16.5955554,44.5306122 L21.049938,20.423658 C21.6518463,17.1661523 26.3121212,17.1441362 26.9447801,20.3958097 L31.6405465,44.5306122 L42.5313185,44.5306122 L23.9806326,7.0871633 L5.42994667,44.5306122 Z M22.0420732,48.0757124 C21.779222,49.4982538 20.5386331,50.5306122 19.0920112,50.5306122 L1.59009899,50.5306122 C-1.20169244,50.5306122 -2.87079654,47.7697069 -1.64625638,45.2980459 L20.8461928,-0.101616237 C22.1967178,-2.8275701 25.7710778,-2.81438868 27.1150723,-0.101616237 L49.6075215,45.2980459 C5.08414042,47.7885641 49.1422456,50.5306122 46.3613062,50.5306122 L29.1679835,50.5306122 C27.7320366,50.5306122 26.4974445,49.5130766 26.2232033,48.1035608 L24.0760553,37.0678766 L22.0420732,48.0757124 Z"
+                        id="sendicon" fill="#1e90ff" fill-rule="nonzero"></path>
+                    </g>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="Layout Layout-open Layout-expand Layout-right">
-        <div class="Messenger_messenger">
-          <div class="Messenger_header">
-            <h4 class="Messenger_prompt">How can we help you?</h4>
-            <span class="chat_close_icon"><i class="fa fa-window-close"
-                aria-hidden="true"></i></span>
+    </div>
+  </div>
+  <!-- Chatbot -->
+
+  <!--about us-->
+  <section id="about_us" class="text-gray-400 dark\:bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1
+          class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl  title-font mb-4 text-white">
+          Impact We Have Created
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          Doer is a dynamic and forward-thinking company that aims to empower new entrepreneurs and startups on their
+          journey to success. With a focus on providing personalized guidance, valuable resources, and effective
+          marketing support, Doer equips businesses with the tools they need to thrive in today's competitive landscape.
+          By offering mentorship programs, access to comprehensive resources, and tailored marketing strategies, Doer
+          acts as a trusted partner, helping entrepreneurs navigate the challenges of starting and growing their
+          businesses. With a collaborative community and a passion for entrepreneurial growth, Doer is dedicated to
+          transforming ideas into flourishing ventures and driving the success of aspiring entrepreneurs.
+        </p>
+      </div>
+      <div class="flex flex-wrap -m-4 text-center">
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-indigo-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M8 17l4 4 4-4m-4-5v9"></path>
+              <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-white">
+              80+ lakhs
+            </h2>
+            <p class="leading-relaxed">Grant Raised</p>
           </div>
-          <div class="Messenger_content">
-            <div class="Messages">
-              <div class="Messages_list"></div>
-            </div>
-            <form id="messenger">
-              <div class="Input Input-blank">
-                <input name="msg" class="Input_field"
-                  placeholder="Send a message..." />
-                <button type="submit" class="Input_button Input_button-send">
-                  <div class="Icon">
-                    <svg viewBox="1496 193 57 54" version="1.1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <g id="Group-9-Copy-3" stroke="none" stroke-width="1"
-                        fill=""
-                        transform="translate(1523.000000, 220.000000) rotate(-270.000000) translate(-1523.000000, -220.000000) translate(1499.000000, 193.000000)">
-                        <path
-                          d="M5.42994667,44.5306122 L16.5955554,44.5306122 L21.049938,20.423658 C21.6518463,17.1661523 26.3121212,17.1441362 26.9447801,20.3958097 L31.6405465,44.5306122 L42.5313185,44.5306122 L23.9806326,7.0871633 L5.42994667,44.5306122 Z M22.0420732,48.0757124 C21.779222,49.4982538 20.5386331,50.5306122 19.0920112,50.5306122 L1.59009899,50.5306122 C-1.20169244,50.5306122 -2.87079654,47.7697069 -1.64625638,45.2980459 L20.8461928,-0.101616237 C22.1967178,-2.8275701 25.7710778,-2.81438868 27.1150723,-0.101616237 L49.6075215,45.2980459 C5.08414042,47.7885641 49.1422456,50.5306122 46.3613062,50.5306122 L29.1679835,50.5306122 C27.7320366,50.5306122 26.4974445,49.5130766 26.2232033,48.1035608 L24.0760553,37.0678766 L22.0420732,48.0757124 Z"
-                          id="sendicon" fill="#1e90ff" fill-rule="nonzero"></path>
-                      </g>
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </form>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-indigo-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-white">30+</h2>
+            <p class="leading-relaxed">Founders Impacted</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-indigo-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+              <path
+                d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z">
+              </path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-white">30</h2>
+            <p class="leading-relaxed">Employment</p>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-indigo-400 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h2 class="title-font font-medium text-3xl text-white">2+</h2>
+            <p class="leading-relaxed">Monthly Business</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Chatbot -->
+  </section>
 
-    <!--about us-->
-    <section id="about_us" class="text-gray-400 dark\:bg-gray-900 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h1
-            class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl  title-font mb-4 text-white">
-            Impact We Have Created
-          </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Doer is a dynamic and forward-thinking company that aims to empower new entrepreneurs and startups on their journey to success. With a focus on providing personalized guidance, valuable resources, and effective marketing support, Doer equips businesses with the tools they need to thrive in today's competitive landscape. By offering mentorship programs, access to comprehensive resources, and tailored marketing strategies, Doer acts as a trusted partner, helping entrepreneurs navigate the challenges of starting and growing their businesses. With a collaborative community and a passion for entrepreneurial growth, Doer is dedicated to transforming ideas into flourishing ventures and driving the success of aspiring entrepreneurs.
+  <!--services-->
+  <section id="services" class="text-gray-400 dark\:bg-gray-900 body-font">
+    <div class="container mx-auto">
+      <h1
+        class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl  title-font pb-20 text-white text-center">
+        The Range Of Services We Offer
+      </h1>
+
+      <div class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-white text-lg title-font font-medium mb-2">
+            Investor Ready Pitch Deck
+          </h2>
+          <p class="leading-relaxed text-base">
+            Unlock funding opportunities with our expertly crafted Investor
+            Ready Pitch Decks, designed to captivate investors and elevate
+            your chances of securing investment for your startup.
           </p>
         </div>
-        <div class="flex flex-wrap -m-4 text-center">
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-            <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2"
-                class="text-indigo-400 w-12 h-12 mb-3 inline-block"
-                viewBox="0 0 24 24">
-                <path d="M8 17l4 4 4-4m-4-5v9"></path>
-                <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+      </div>
+      <div class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-white text-lg title-font font-medium mb-2">
+            Angel Investor Networks
+          </h2>
+          <p class="leading-relaxed text-base">
+            Angel investors actively seek promising early-stage startups to
+            invest in. This company's services can be relevant for
+            entrepreneurs looking to capture the attention of angel investors
+            by crafting compelling pitch decks and comprehensive business
+            plans.
+          </p>
+        </div>
+        <div
+          class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-4/5 p-5 mx-auto sm:flex-row flex-col">
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-white text-lg title-font font-medium mb-2">
+            Presenting pitch deck
+          </h2>
+          <p class="leading-relaxed text-base">
+            Amplify your pitch's impact with our comprehensive services,
+            offering personalized support to confidently present your Investor
+            Ready Pitch Deck to investors, ensuring a compelling and
+            successful investment pitch.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
+      </div>
+      <div class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-white text-lg title-font font-medium mb-2">
+            Lack of Experience
+          </h2>
+          <p class="leading-relaxed text-base">
+            Many early-stage founders may lack experience in fundraising and
+            crafting persuasive investment materials. This company's
+            frameworks and expertise can guide founders through the process,
+            offering valuable insights and best practices to increase their
+            chances of securing funding.
+          </p>
+        </div>
+        <div
+          class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-4/5 p-5 mx-auto sm:flex-row flex-col">
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-white text-lg title-font font-medium mb-2">
+            Startup Incubators and Accelerators
+          </h2>
+          <p class="leading-relaxed text-base">
+            Many startup incubators and accelerators support early-stage
+            entrepreneurs and provide resources to help them refine their
+            business models and secure funding. This company's services can be
+            valuable in such programs to enhance the startups' investment
+            readiness.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
+      </div>
+      <div class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-white text-lg title-font font-medium mb-2">
+            Business Consulting and Advisory Services
+          </h2>
+          <p class="leading-relaxed text-base">
+            Entrepreneurs often seek the guidance of business consultants and
+            advisors to refine their business strategies. This company's
+            frameworks can serve as a resource for consultants and advisors to
+            assist their clients in developing investment-ready pitch decks
+            and business plans.
+          </p>
+        </div>
+        <div
+          class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="flex items-center lg:w-4/5 p-5 mx-auto sm:flex-row flex-col">
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-white text-lg title-font font-medium mb-2">
+            Success You Seek
+          </h2>
+          <p class="leading-relaxed text-base">
+            Success for startups means achieving sustainable growth,
+            profitability, and market dominance through innovation, customer
+            satisfaction, and effective execution of their business model.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+  <!-- blog -->
+  <section class="text-gray-600 body-font overflow-hidden dark\:bg-gray-900">
+    <h1
+      class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl  title-font text-white text-center mb-4">
+      Insights and Inspiration</h1>
+    <p class="text-center text-2xl">Explore Our Blog for Entrepreneurial Tips and Success Stories</p>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-12">
+        <div class="p-12 md:w-1/2 flex flex-col items-start bg-white/5">
+          <span
+            class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">STORY
+            1</span>
+          <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-100 p-3 ">Innovator Mridul develops "Umoni"
+          </h2>
+          <p class="leading-relaxed mb-8 text-white/60">Doer
+            "Sustainable business plan for growth" modules and frameworks
+            helped
+            Mridul to get shortlisted for the prestigious Birac BIG 2022 grant
+            of ₹50 L."I credit my success to the
+            knowledge and guidance I received from Doer Global and AIC Selco
+            Foundation. If you're serious about
+            building a successful business, I highly recommend their platform
+            and services." - Mridul. </p>
+          <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+            <a class="text-indigo-500 inline-flex items-center">Learn More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
               </svg>
-              <h2 class="title-font font-medium text-3xl text-white">
-                80+ lakhs
-              </h2>
-              <p class="leading-relaxed">Grant Raised</p>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-            <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2"
-                class="text-indigo-400 w-12 h-12 mb-3 inline-block"
-                viewBox="0 0 24 24">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
-              </svg>
-              <h2 class="title-font font-medium text-3xl text-white">30+</h2>
-              <p class="leading-relaxed">Founders Impacted</p>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-            <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2"
-                class="text-indigo-400 w-12 h-12 mb-3 inline-block"
-                viewBox="0 0 24 24">
-                <path d="M3 18v-6a9 9 0 0118 0v6"></path>
+            </a>
+            <span
+              class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>3.72K
+            </span>
+            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" viewBox="0 0 24 24">
                 <path
-                  d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z">
+                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
                 </path>
+              </svg>13
+            </span>
+          </div>
+          <a class="inline-flex items-center">
+            <img src="./src/images/mridul.ico" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-100">MRIDUL</span>
+              <span class="text-gray-400 text-xs tracking-widest mt-0.5">Entrepreneur</span>
+            </span>
+          </a>
+        </div>
+        <div class="p-12 md:w-1/2 flex flex-col items-start bg-white/5">
+          <span
+            class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">STORY
+            2</span>
+          <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-100 p-3">Innovator
+            Saruj builds
+            "Rohedoi"</h2>
+          <p class="leading-relaxed mb-8 text-white/60">Doer
+            "sustainable business plan for growth" modules and frameworks
+            helped
+            Saruj to be shortlisted as No 3 for the prestigious Birac BIG 2021
+            grant of ₹50 L under the category of
+            Agriculture and allied areas. "To my surprise, I was selected for
+            a prestigious grant of 50 lakhs by Birac
+            BIG 2021 and even secured an all-India rank of 3! It's surreal to
+            think that my experience with Doer Global
+            and AIC Selco Foundation helped me achieve this level of success.
+            I can't recommend their platform and
+            services enough for anyone who is serious about building a
+            successful business." - Saruj.</p>
+          <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+            <a class="text-indigo-500 inline-flex items-center">Learn More
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
               </svg>
-              <h2 class="title-font font-medium text-3xl text-white">30</h2>
-              <p class="leading-relaxed">Employment</p>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-            <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2"
-                class="text-indigo-400 w-12 h-12 mb-3 inline-block"
-                viewBox="0 0 24 24">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-              <h2 class="title-font font-medium text-3xl text-white">2+</h2>
-              <p class="leading-relaxed">Monthly Business</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--services-->
-    <section id="services" class="text-gray-400 dark\:bg-gray-900 body-font">
-      <div class="container mx-auto">
-        <h1
-          class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl  title-font pb-20 text-white text-center">
-          The Range Of Services We Offer
-        </h1>
-
-        <div
-          class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
-          <div
-            class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2"
-              class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-            </svg>
-          </div>
-          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 class="text-white text-lg title-font font-medium mb-2">
-              Investor Ready Pitch Deck
-            </h2>
-            <p class="leading-relaxed text-base">
-              Unlock funding opportunities with our expertly crafted Investor
-              Ready Pitch Decks, designed to captivate investors and elevate
-              your chances of securing investment for your startup.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
-          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 class="text-white text-lg title-font font-medium mb-2">
-              Angel Investor Networks
-            </h2>
-            <p class="leading-relaxed text-base">
-              Angel investors actively seek promising early-stage startups to
-              invest in. This company's services can be relevant for
-              entrepreneurs looking to capture the attention of angel investors
-              by crafting compelling pitch decks and comprehensive business
-              plans.
-            </p>
-          </div>
-          <div
-            class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2"
-              class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-              <circle cx="6" cy="6" r="3"></circle>
-              <circle cx="6" cy="18" r="3"></circle>
-              <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-            </svg>
-          </div>
-        </div>
-        <div class="flex items-center lg:w-4/5 p-5 mx-auto sm:flex-row flex-col">
-          <div
-            class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2"
-              class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 class="text-white text-lg title-font font-medium mb-2">
-              Presenting pitch deck
-            </h2>
-            <p class="leading-relaxed text-base">
-              Amplify your pitch's impact with our comprehensive services,
-              offering personalized support to confidently present your Investor
-              Ready Pitch Deck to investors, ensuring a compelling and
-              successful investment pitch.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
-        </div>
-        <div
-          class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
-          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 class="text-white text-lg title-font font-medium mb-2">
-              Lack of Experience
-            </h2>
-            <p class="leading-relaxed text-base">
-              Many early-stage founders may lack experience in fundraising and
-              crafting persuasive investment materials. This company's
-              frameworks and expertise can guide founders through the process,
-              offering valuable insights and best practices to increase their
-              chances of securing funding.
-            </p>
-          </div>
-          <div
-            class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2"
-              class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-              <circle cx="6" cy="6" r="3"></circle>
-              <circle cx="6" cy="18" r="3"></circle>
-              <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-            </svg>
-          </div>
-        </div>
-        <div class="flex items-center lg:w-4/5 p-5 mx-auto sm:flex-row flex-col">
-          <div
-            class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2"
-              class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 class="text-white text-lg title-font font-medium mb-2">
-              Startup Incubators and Accelerators
-            </h2>
-            <p class="leading-relaxed text-base">
-              Many startup incubators and accelerators support early-stage
-              entrepreneurs and provide resources to help them refine their
-              business models and secure funding. This company's services can be
-              valuable in such programs to enhance the startups' investment
-              readiness.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
-        </div>
-        <div
-          class="flex items-center lg:w-4/5 p-5 mx-auto border-b pb-10 mb-10 border-gray-600 sm:flex-row flex-col">
-          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 class="text-white text-lg title-font font-medium mb-2">
-              Business Consulting and Advisory Services
-            </h2>
-            <p class="leading-relaxed text-base">
-              Entrepreneurs often seek the guidance of business consultants and
-              advisors to refine their business strategies. This company's
-              frameworks can serve as a resource for consultants and advisors to
-              assist their clients in developing investment-ready pitch decks
-              and business plans.
-            </p>
-          </div>
-          <div
-            class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2"
-              class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-              <circle cx="6" cy="6" r="3"></circle>
-              <circle cx="6" cy="18" r="3"></circle>
-              <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-            </svg>
-          </div>
-        </div>
-        <div class="flex items-center lg:w-4/5 p-5 mx-auto sm:flex-row flex-col">
-          <div
-            class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2"
-              class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-            <h2 class="text-white text-lg title-font font-medium mb-2">
-              Success You Seek
-            </h2>
-            <p class="leading-relaxed text-base">
-              Success for startups means achieving sustainable growth,
-              profitability, and market dominance through innovation, customer
-              satisfaction, and effective execution of their business model.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--  -->
-    <!-- blog -->
-    <section class="text-gray-600 body-font overflow-hidden dark\:bg-gray-900">
-      <h1 class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl  title-font text-white text-center mb-4">Insights and Inspiration</h1>
-      <p class="text-center text-2xl">Explore Our Blog for Entrepreneurial Tips and Success Stories</p>
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-12">
-          <div class="p-12 md:w-1/2 flex flex-col items-start bg-white/5" >
-            <span
-              class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">STORY
-              1</span>
-            <h2
-              class="sm:text-3xl text-2xl title-font font-medium text-gray-100 p-3 ">Innovator Mridul develops "Umoni"</h2>
-            <p class="leading-relaxed mb-8 text-white/60">Doer
-              "Sustainable business plan for growth" modules and frameworks
-              helped
-              Mridul to get shortlisted for the prestigious Birac BIG 2022 grant
-              of ₹50 L."I credit my success to the
-              knowledge and guidance I received from Doer Global and AIC Selco
-              Foundation. If you're serious about
-              building a successful business, I highly recommend their platform
-              and services." - Mridul. </p>
-            <div
-              class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-              <a class="text-indigo-500 inline-flex items-center">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2" fill="none"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span
-                class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2"
-                  fill="none" stroke-linecap="round"
-                  stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>3.72K
-              </span>
-              <span
-                class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2"
-                  fill="none" stroke-linecap="round"
-                  stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path
-                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                  </path>
-                </svg>13
-              </span>
-            </div>
-            <a class="inline-flex items-center">
-              <img src="./src/images/mridul.ico"
-                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-              <span class="flex-grow flex flex-col pl-4">
-                <span class="title-font font-medium text-gray-100">MRIDUL</span>
-                <span class="text-gray-400 text-xs tracking-widest mt-0.5">Entrepreneur</span>
-              </span>
             </a>
-          </div>
-          <div class="p-12 md:w-1/2 flex flex-col items-start bg-white/5">
             <span
-              class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">STORY
-              2</span>
-            <h2
-              class="sm:text-3xl text-2xl title-font font-medium text-gray-100 p-3">Innovator
-              Saruj builds
-              "Rohedoi"</h2>
-            <p class="leading-relaxed mb-8 text-white/60">Doer
-              "sustainable business plan for growth" modules and frameworks
-              helped
-              Saruj to be shortlisted as No 3 for the prestigious Birac BIG 2021
-              grant of ₹50 L under the category of
-              Agriculture and allied areas. "To my surprise, I was selected for
-              a prestigious grant of 50 lakhs by Birac
-              BIG 2021 and even secured an all-India rank of 3! It's surreal to
-              think that my experience with Doer Global
-              and AIC Selco Foundation helped me achieve this level of success.
-              I can't recommend their platform and
-              services enough for anyone who is serious about building a
-              successful business." - Saruj.</p>
-            <div
-              class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-              <a class="text-indigo-500 inline-flex items-center">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2" fill="none"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span
-                class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2"
-                  fill="none" stroke-linecap="round"
-                  stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>2.91K
-              </span>
-              <span
-                class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2"
-                  fill="none" stroke-linecap="round"
-                  stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path
-                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
-                  </path>
-                </svg>9
-              </span>
-            </div>
-            <a class="inline-flex items-center">
-              <img src="./src/images/suraj.ico"
-                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-              <span class="flex-grow flex flex-col pl-4">
-                <span class="title-font font-medium text-gray-100">SURAJ</span>
-                <span class="text-gray-400 text-xs tracking-widest mt-0.5">Entrepreneur</span>
-              </span>
-            </a>
+              class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>2.91K
+            </span>
+            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" viewBox="0 0 24 24">
+                <path
+                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                </path>
+              </svg>9
+            </span>
           </div>
+          <a class="inline-flex items-center">
+            <img src="./src/images/suraj.ico" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-100">SURAJ</span>
+              <span class="text-gray-400 text-xs tracking-widest mt-0.5">Entrepreneur</span>
+            </span>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-<!--our team-->
-    <section>
-      <div class="container flow-content">
-        <h1
-          class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl font-medium title-font text-white text-center">
-          Our Team
-        </h1>
-        <h6 class="text-2xl font-medium title-font pb-20 text-gray-600 text-center">Amazing People Behind The Scene</h6>
-        <ul role="list" class="grid">
-          <li>
-            <article class="card" data-visible="false">
-              <div class="card__front flow-content">
-                <img class="card__img mx-auto" src="./src/images/nabajeet.jpg"/>               
-                 <div class="flow-content" data-spacing="sm">
-                  <p class="card__name">Nabajeet Kalita</p>
-                  <p class="card__position">Founder</p>
-                </div>
-              </div>
-              <div class="card__back flow-content">
+  <!--our team-->
+  <section>
+    <div class="container flow-content">
+      <h1
+        class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl font-medium title-font text-white text-center">
+        Our Team
+      </h1>
+      <h6 class="text-2xl font-medium title-font pb-20 text-gray-600 text-center">Amazing People Behind The Scene</h6>
+      <ul role="list" class="grid">
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="./src/images/nabajeet.jpg" />
+              <div class="flow-content" data-spacing="sm">
                 <p class="card__name">Nabajeet Kalita</p>
-                <q>Success is a team effort, and I'm proud to be part of this
-                  incredible team.</q>
-                <ul role="list" class="card__social flex-group">
-                  <li>
-                    <a href="https://twitter.com/nabajeet_kalita">
-                      <i class="fa-brands fa-twitter fa-xl"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/nabajeet-kalita-a84a487b/">
-                      <i class="fa-brands fa-linkedin fa-xl"></i>
-                    </a>
-                  </li>
-                </ul>
+                <p class="card__position">Founder</p>
               </div>
-              <footer class="card__footer">
-                <button data-card-controller class="card__toggle">
-                  <i class="fa-solid fa-plus card__toggle-icon"></i>
-                </button>
-              </footer>
-            </article>
-          </li>
-          <li>
-            <article class="card" data-visible="false">
-              <div class="card__front flow-content">
-                <img class="card__img mx-auto"
-                  src="./src/images/abhinash.jpg"/>
-                <div class="flow-content" data-spacing="sm">
-                  <p class="card__name">Abhinash Roy</p>
-                  <p class="card__position">Technical Head</p>
-                </div>
-              </div>
-              <div class="card__back flow-content">
+            </div>
+            <div class="card__back flow-content">
+              <p class="card__name">Nabajeet Kalita</p>
+              <q>Success is a team effort, and I'm proud to be part of this
+                incredible team.</q>
+              <ul role="list" class="card__social flex-group">
+                <li>
+                  <a href="https://twitter.com/nabajeet_kalita">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/nabajeet-kalita-a84a487b/">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa-solid fa-plus card__toggle-icon"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="./src/images/abhinash.jpg" />
+              <div class="flow-content" data-spacing="sm">
                 <p class="card__name">Abhinash Roy</p>
-                <q>I believe in the power of storytelling to connect brands with
-                  their audience.</q>
-                <ul role="list" class="card__social flex-group">
-                  <li>
-                    <a href="https://twitter.com/abinash_roy">
-                      <i class="fa-brands fa-twitter fa-xl"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/abinash-roy-9ba624b0/">
-                      <i class="fa-brands fa-linkedin fa-xl"></i>
-                    </a>
-                  </li>
-                </ul>
+                <p class="card__position">Technical Head</p>
               </div>
-              <footer class="card__footer">
-                <button data-card-controller class="card__toggle">
-                  <i class="fa-solid fa-plus card__toggle-icon"></i>
-                </button>
-              </footer>
-            </article>
-          </li>
-          <li>
-            <article class="card" data-visible="false">
-              <div class="card__front flow-content">
-                <img class="card__img mx-auto"
-                  src="./src/images/mriganka.jpg"/>
-                <div class="flow-content" data-spacing="sm">
-                  <p class="card__name">Mriganka Barua</p>
-                  <p class="card__position">Sales Manager</p>
-                </div>
-              </div>
-              <div class="card__back flow-content">
+            </div>
+            <div class="card__back flow-content">
+              <p class="card__name">Abhinash Roy</p>
+              <q>I believe in the power of storytelling to connect brands with
+                their audience.</q>
+              <ul role="list" class="card__social flex-group">
+                <li>
+                  <a href="https://twitter.com/abinash_roy">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/abinash-roy-9ba624b0/">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa-solid fa-plus card__toggle-icon"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="./src/images/mriganka.jpg" />
+              <div class="flow-content" data-spacing="sm">
                 <p class="card__name">Mriganka Barua</p>
-                <q>Building strong relationships with clients is at the heart of
-                  my approach to sales.</q>
-                <ul role="list" class="card__social flex-group">
-                  <li>
-                    <a href="https://twitter.com/MrigankaBarua">
-                      <i class="fa-brands fa-twitter fa-xl"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/mriganka-barua-924298135/">
-                      <i class="fa-brands fa-linkedin fa-xl"></i>
-                    </a>
-                  </li>
-                </ul>
+                <p class="card__position">Sales Manager</p>
               </div>
-              <footer class="card__footer">
-                <button data-card-controller class="card__toggle">
-                  <i class="fa-solid fa-plus card__toggle-icon"></i>
-                </button>
-              </footer>
-            </article>
-          </li>
-          <li>
-            <article class="card" data-visible="false">
-              <div class="card__front flow-content">
-                <img class="card__img mx-auto"
-                  src="./src/images/anup.jpg"/>
-                <div class="flow-content" data-spacing="sm">
-                  <p class="card__name">Anup Medhi</p>
-                  <p class="card__position">Software Engineer</p>
-                </div>
-              </div>
-              <div class="card__back flow-content">
+            </div>
+            <div class="card__back flow-content">
+              <p class="card__name">Mriganka Barua</p>
+              <q>Building strong relationships with clients is at the heart of
+                my approach to sales.</q>
+              <ul role="list" class="card__social flex-group">
+                <li>
+                  <a href="https://twitter.com/MrigankaBarua">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/mriganka-barua-924298135/">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa-solid fa-plus card__toggle-icon"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="./src/images/anup.jpg" />
+              <div class="flow-content" data-spacing="sm">
                 <p class="card__name">Anup Medhi</p>
-                <q>I believe in pushing the boundaries of technology to create
-                  innovative solutions for our users.</q>
-                <ul role="list" class="card__social flex-group">
-                  <li>
-                    <a href="https://twitter.com/ferry_bunn">
-                      <i class="fa-brands fa-twitter fa-xl"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/anup-medhi-67881188/">
-                      <i class="fa-brands fa-linkedin fa-xl"></i>
-                    </a>
-                  </li>
-                </ul>
+                <p class="card__position">Software Engineer</p>
               </div>
-              <footer class="card__footer">
-                <button data-card-controller class="card__toggle">
-                  <i class="fa-solid fa-plus card__toggle-icon"></i>
-                </button>
-              </footer>
-            </article>
-          </li>
-          <li>
-            <article class="card" data-visible="false">
-              <div class="card__front flow-content">
-                <img class="card__img mx-auto"
-                  src="./src/images/rahul.jpg"/>
-                <div class="flow-content" data-spacing="sm">
-                  <p class="card__name">Rahul Gogoi</p>
-                  <p class="card__position">Graphic Designer</p>
-                </div>
-              </div>
-              <div class="card__back flow-content">
+            </div>
+            <div class="card__back flow-content">
+              <p class="card__name">Anup Medhi</p>
+              <q>I believe in pushing the boundaries of technology to create
+                innovative solutions for our users.</q>
+              <ul role="list" class="card__social flex-group">
+                <li>
+                  <a href="https://twitter.com/ferry_bunn">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/anup-medhi-67881188/">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa-solid fa-plus card__toggle-icon"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="./src/images/rahul.jpg" />
+              <div class="flow-content" data-spacing="sm">
                 <p class="card__name">Rahul Gogoi</p>
-                <q>Design is all about finding beauty in simplicity, and I love
-                  bringing ideas to life.</q>
-                <ul role="list" class="card__social flex-group">
-                  <li>
-                    <a href="https://twitter.com/rahulgogs">
-                      <i class="fa-brands fa-twitter fa-xl"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/rahulgogoi/">
-                      <i class="fa-brands fa-linkedin fa-xl"></i>
-                    </a>
-                  </li>
-                </ul>
+                <p class="card__position">Graphic Designer</p>
               </div>
-              <footer class="card__footer">
-                <button data-card-controller class="card__toggle">
-                  <i class="fa-solid fa-plus card__toggle-icon"></i>
-                </button>
-              </footer>
-            </article>
-          </li>
-          <li>
-            <article class="card" data-visible="false">
-              <div class="card__front flow-content">
-                <img class="card__img mx-auto"
-                  src="./src/images/main.png"/>
-                <div class="flow-content" data-spacing="sm">
-                  <p class="card__name">Pranav Upadhyay</p>
-                  <p class="card__position">Web Developer</p>
-                </div>
-              </div>
-              <div class="card__back flow-content">
+            </div>
+            <div class="card__back flow-content">
+              <p class="card__name">Rahul Gogoi</p>
+              <q>Design is all about finding beauty in simplicity, and I love
+                bringing ideas to life.</q>
+              <ul role="list" class="card__social flex-group">
+                <li>
+                  <a href="https://twitter.com/rahulgogs">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/rahulgogoi/">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa-solid fa-plus card__toggle-icon"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+        <li>
+          <article class="card" data-visible="false">
+            <div class="card__front flow-content">
+              <img class="card__img mx-auto" src="./src/images/main.png" />
+              <div class="flow-content" data-spacing="sm">
                 <p class="card__name">Pranav Upadhyay</p>
-                <q>Coding is my passion, and I'm excited to contribute my skills
-                  to this project.</q>
-                <ul role="list" class="card__social flex-group">
-                  <li>
-                    <a href="https://twitter.com/PranavU98679758">
-                      <i class="fa-brands fa-twitter fa-xl"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/pranav-upadhyay-5a1688219/">
-                      <i class="fa-brands fa-linkedin fa-xl"></i>
-                    </a>
-                  </li>
-                </ul>
+                <p class="card__position">Web Developer</p>
               </div>
-              <footer class="card__footer">
-                <button data-card-controller class="card__toggle">
-                  <i class="fa-solid fa-plus card__toggle-icon"></i>
-                </button>
-              </footer>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
+            </div>
+            <div class="card__back flow-content">
+              <p class="card__name">Pranav Upadhyay</p>
+              <q>Coding is my passion, and I'm excited to contribute my skills
+                to this project.</q>
+              <ul role="list" class="card__social flex-group">
+                <li>
+                  <a href="https://twitter.com/PranavU98679758">
+                    <i class="fa-brands fa-twitter fa-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/pranav-upadhyay-5a1688219/">
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <footer class="card__footer">
+              <button data-card-controller class="card__toggle">
+                <i class="fa-solid fa-plus card__toggle-icon"></i>
+              </button>
+            </footer>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
 
   <!-- testimonial -->
-    <div id="testimonials"
-      class="flex items-center justify-center w-full px-8 py-10 border-t border-gray-200 md:py-16 lg:py-24 xl:py-40 xl:px-0 ">
-      <div class="max-w-6xl mx-auto">
-        <div class="flex-col items-center">
-          <div
-            class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center">
-            <h1
-              class="sm:text-3xl text-3xl font-medium title-font text-white text-center">
-              Our Customers Love Our Product
-            </h1>
-            <h2
-              class="text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-              Testimonials
-            </h2>
-            <p class="my-6 text-xl font-medium text-gray-500">
-              Don't just take our word for it, read from our extensive list of
-              case studies and customer testimonials.
-            </p>
+  <div id="testimonials"
+    class="flex items-center justify-center w-full px-8 py-10 border-t border-gray-200 md:py-16 lg:py-24 xl:py-40 xl:px-0 ">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex-col items-center">
+        <div class="flex flex-col items-center justify-center w-full h-full max-w-2xl pr-8 mx-auto text-center">
+          <h1 class="sm:text-3xl text-3xl font-medium title-font text-white text-center">
+            Our Customers Love Our Product
+          </h1>
+          <h2
+            class="text-4xl font-extrabold leading-10 tracking-tight text-gray-100 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
+            Testimonials
+          </h2>
+          <p class="my-6 text-xl font-medium text-gray-500">
+            Don't just take our word for it, read from our extensive list of
+            case studies and customer testimonials.
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center max-w-2xl py-8 mx-auto xl:flex-row xl:max-w-full ">
+          <div class="w-full xl:w-1/2 xl:pr-8">
+            <blockquote
+              class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-white rounded-lg md:flex-row md:text-left hover:bg-white">
+              <div class="flex flex-col pr-8">
+                <div class="relative pl-12">
+                  <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 125">
+                    <path
+                      d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+                  </svg>
+                  <p class="mt-2 text-base text-gray-900 bg-white/5">
+                    I am incredibly grateful for Doer's support and expertise.
+                    Their guidance has been crucial in helping me navigate the
+                    complexities of starting a business. The mentorship
+                    program provided me with valuable insights and practical
+                    advice that I couldn't have found elsewhere. The marketing
+                    services have been top-notch, allowing me to effectively
+                    promote my business and increase brand visibility. Doer is
+                    a true partner in success!
+                  </p>
+                </div>
+
+                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">
+                  Arti Chopra
+                  <span class="mt-1 text-sm leading-5 text-gray-500 truncate">-
+                    CEO SomeCompany</span>
+                </h3>
+                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
+              </div>
+              <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
+                src="./src/images/girl1.jpeg" alt />
+            </blockquote>
+            <blockquote
+              class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 mb-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0">
+              <div class="flex flex-col pr-10">
+                <div class="relative pl-12">
+                  <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 125">
+                    <path
+                      d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+                  </svg>
+                  <p class="mt-2 text-base text-gray-900 bg-white/5">
+                    As a new entrepreneur, I was overwhelmed and unsure of
+                    where to start. But thanks to Doer, I received
+                    personalized guidance that gave me the confidence to turn
+                    my idea into a successful business. The resources they
+                    offer are incredibly helpful, and their marketing
+                    strategies have helped me attract customers and increase
+                    sales. Thank you, Doer, for being the support system I
+                    needed!
+                  </p>
+                </div>
+                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">
+                  Vijay Khanna
+                  <span class="mt-1 text-sm leading-5 text-gray-500 truncate">-
+                    CEO SomeCompany</span>
+                </h3>
+                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
+              </div>
+              <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
+                src="./src/images/man1.jpeg" alt />
+            </blockquote>
           </div>
-          <div
-            class="flex flex-col items-center justify-center max-w-2xl py-8 mx-auto xl:flex-row xl:max-w-full ">
-            <div class="w-full xl:w-1/2 xl:pr-8">
-              <blockquote
-                class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-white rounded-lg md:flex-row md:text-left hover:bg-white">
-                <div class="flex flex-col pr-8">
-                  <div class="relative pl-12">
-                    <svg
-                      class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 100 125">
-                      <path
-                        d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                    </svg>
-                    <p class="mt-2 text-base text-gray-900 bg-white/5">
-                      I am incredibly grateful for Doer's support and expertise.
-                      Their guidance has been crucial in helping me navigate the
-                      complexities of starting a business. The mentorship
-                      program provided me with valuable insights and practical
-                      advice that I couldn't have found elsewhere. The marketing
-                      services have been top-notch, allowing me to effectively
-                      promote my business and increase brand visibility. Doer is
-                      a true partner in success!
-                    </p>
-                  </div>
+          <div class="w-full xl:w-1/2 xl:pl-8">
+            <blockquote
+              class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
+              <div class="flex flex-col pr-10">
+                <div class="relative pl-12">
+                  <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 125">
+                    <path
+                      d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+                  </svg>
+                  <p class="mt-2 text-base text-gray-900 bg-white/5">
+                    I can't thank Doer enough for their exceptional services.
+                    From the moment I signed up, I knew I was in good hands.
+                    The mentorship I received was tailored to my unique needs,
+                    and it made a world of difference. The marketing support
+                    they provided helped me establish a strong online presence
+                    and stand out in a competitive market. Doer truly
+                    understands the challenges of startups and provides the
+                    tools for success!
+                  </p>
+                </div>
 
-                  <h3
-                    class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">
-                    Arti Chopra
-                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">-
-                      CEO SomeCompany</span>
-                  </h3>
-                  <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
+                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">
+                  Amit Chaouhan
+                  <span class="mt-1 text-sm leading-5 text-gray-500 truncate">-
+                    CEO SomeCompany</span>
+                </h3>
+                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
+              </div>
+              <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
+                src="./src/images/man2.jpeg" alt />
+            </blockquote>
+            <blockquote
+              class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
+              <div class="flex flex-col pr-10">
+                <div class="relative pl-12">
+                  <svg class="absolute left-0 w-10 h-10 text-indigo-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 125">
+                    <path
+                      d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
+                  </svg>
+                  <p class="mt-2 text-base text-gray-900 bg-white/5">
+                    Doer has been instrumental in taking my business to the
+                    next level. Their resources are comprehensive and easy to
+                    follow, and they've saved me countless hours of research
+                    and trial-and-error. The marketing services they offer
+                    have given my brand a boost, reaching a wider audience and
+                    generating more leads. Doer is a must-have partner for any
+                    entrepreneur or startup!
+                  </p>
                 </div>
-                <img
-                  class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                  src="./src/images/girl1.jpeg"
-                  alt />
-              </blockquote>
-              <blockquote
-                class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 mb-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0">
-                <div class="flex flex-col pr-10">
-                  <div class="relative pl-12">
-                    <svg
-                      class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 100 125">
-                      <path
-                        d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                    </svg>
-                    <p class="mt-2 text-base text-gray-900 bg-white/5">
-                      As a new entrepreneur, I was overwhelmed and unsure of
-                      where to start. But thanks to Doer, I received
-                      personalized guidance that gave me the confidence to turn
-                      my idea into a successful business. The resources they
-                      offer are incredibly helpful, and their marketing
-                      strategies have helped me attract customers and increase
-                      sales. Thank you, Doer, for being the support system I
-                      needed!
-                    </p>
-                  </div>
-                  <h3
-                    class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">
-                    Vijay Khanna
-                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">-
-                      CEO SomeCompany</span>
-                  </h3>
-                  <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                </div>
-                <img
-                  class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                  src="./src/images/man1.jpeg"
-                  alt />
-              </blockquote>
-            </div>
-            <div class="w-full xl:w-1/2 xl:pl-8">
-              <blockquote
-                class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
-                <div class="flex flex-col pr-10">
-                  <div class="relative pl-12">
-                    <svg
-                      class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 100 125">
-                      <path
-                        d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                    </svg>
-                    <p class="mt-2 text-base text-gray-900 bg-white/5">
-                      I can't thank Doer enough for their exceptional services.
-                      From the moment I signed up, I knew I was in good hands.
-                      The mentorship I received was tailored to my unique needs,
-                      and it made a world of difference. The marketing support
-                      they provided helped me establish a strong online presence
-                      and stand out in a competitive market. Doer truly
-                      understands the challenges of startups and provides the
-                      tools for success!
-                    </p>
-                  </div>
 
-                  <h3
-                    class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">
-                    Amit Chaouhan
-                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">-
-                      CEO SomeCompany</span>
-                  </h3>
-                  <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                </div>
-                <img
-                  class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                  src="./src/images/man2.jpeg"
-                  alt />
-              </blockquote>
-              <blockquote
-                class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease">
-                <div class="flex flex-col pr-10">
-                  <div class="relative pl-12">
-                    <svg
-                      class="absolute left-0 w-10 h-10 text-indigo-500 fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 100 125">
-                      <path
-                        d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z" />
-                    </svg>
-                    <p class="mt-2 text-base text-gray-900 bg-white/5">
-                      Doer has been instrumental in taking my business to the
-                      next level. Their resources are comprehensive and easy to
-                      follow, and they've saved me countless hours of research
-                      and trial-and-error. The marketing services they offer
-                      have given my brand a boost, reaching a wider audience and
-                      generating more leads. Doer is a must-have partner for any
-                      entrepreneur or startup!
-                    </p>
-                  </div>
-
-                  <h3
-                    class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">
-                    Neha Pathak
-                    <span class="mt-1 text-sm leading-5 text-gray-500 truncate">-
-                      CEO SomeCompany</span>
-                  </h3>
-                  <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
-                </div>
-                <img
-                  class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
-                  src="./src/images/girl2.jpeg"
-                  alt />
-              </blockquote>
-            </div>
+                <h3 class="pl-12 mt-3 text-base font-medium leading-5 text-gray-800 truncate">
+                  Neha Pathak
+                  <span class="mt-1 text-sm leading-5 text-gray-500 truncate">-
+                    CEO SomeCompany</span>
+                </h3>
+                <p class="mt-1 text-sm leading-5 text-gray-500 truncate"></p>
+              </div>
+              <img class="flex-shrink-0 object-cover w-24 h-24 mb-5 bg-gray-300 rounded-full md:mb-0"
+                src="./src/images/girl2.jpeg" alt />
+            </blockquote>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <!-- FAQ -->
-    <h1
-      class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl font-medium title-font pb-20 text-white text-center">
-      Frequently Asked Questions (FAQs)
-    </h1>
-    <div id="accordion-flush" data-accordion="collapse"
-      data-active-classes="dark:text-white"
-      data-inactive-classes="text-gray-100 dark:text-gray-400">
-      <h2 id="accordion-flush-heading-1">
-        <button type="button"
+  <!-- FAQ -->
+  <h1
+    class="sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl text-4xl font-medium title-font pb-20 text-white text-center">
+    Frequently Asked Questions (FAQs)
+  </h1>
+  <div id="accordion-flush" data-accordion="collapse" data-active-classes="dark:text-white"
+    data-inactive-classes="text-gray-100 dark:text-gray-400">
+    <h2 id="accordion-flush-heading-1">
+      <button type="button"
         class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
-          data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
-          aria-controls="accordion-flush-body-1">
-          <span>What does Doer do?</span>
-          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0"
-            fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="accordion-flush-body-1" class="hidden"
-        aria-labelledby="accordion-flush-heading-1">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
-            Doer is a company that provides guidance, resources, and marketing
-            support to new entrepreneurs and startups to help them grow their
-            businesses.
-          </p>
-        </div>
-      </div>
-      <h2 id="accordion-flush-heading-2">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
-          data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
-          aria-controls="accordion-flush-body-2">
-          <span>How do I get started with Doer?</span>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="accordion-flush-body-2" class="hidden"
-        aria-labelledby="accordion-flush-heading-2">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
-            To get started with Doer, simply visit our website and sign up for
-            an account. Once you've created an account, you can explore the
-            available resources, access guidance materials, and start utilizing
-            our marketing services.
-          </p>
-        </div>
-      </div>
-      <h2 id="accordion-flush-heading-3">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
-          data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
-          aria-controls="accordion-flush-body-3">
-          <span>How can Doer help me as a new entrepreneur/startup?</span>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="accordion-flush-body-3" class="hidden"
-        aria-labelledby="accordion-flush-heading-3">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
-            Doer can assist you in various ways. We offer personalized guidance
-            and mentorship to help you navigate the challenges of starting and
-            growing a business. Additionally, we provide access to a range of
-            resources, such as business templates, market research data, and
-            industry insights. Furthermore, our marketing services can help you
-            promote your products or services effectively.
-          </p>
-        </div>
-      </div>
-      <h2 id="accordion-flush-heading-4">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
-          data-accordion-target="#accordion-flush-body-4" aria-expanded="false"
-          aria-controls="accordion-flush-body-4">
-          <span>Is Doer only for new entrepreneurs, or can established
-            businesses
-            benefit as well?
-          </span>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="accordion-flush-body-4" class="hidden"
-        aria-labelledby="accordion-flush-heading-4">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
-            While Doer primarily focuses on assisting new entrepreneurs and
-            startups, our services can also benefit established businesses. We
-            offer resources and marketing support that can help businesses at
-            different stages of their growth journey.
-          </p>
-        </div>
-      </div>
-      <h2 id="accordion-flush-heading-5">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
-          data-accordion-target="#accordion-flush-body-5" aria-expanded="false"
-          aria-controls="accordion-flush-body-5">
-          <span>What types of businesses does Doer cater to? </span>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="accordion-flush-body-5" class="hidden"
-        aria-labelledby="accordion-flush-heading-5">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
-            Doer caters to a wide range of businesses across various industries.
-            Whether you're starting a tech startup, a retail business, a
-            consulting firm, or any other type of business, our guidance and
-            resources can be tailored to your specific needs.
-          </p>
-        </div>
-      </div>
-      <h2 id="accordion-flush-heading-6">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
-          data-accordion-target="#accordion-flush-body-6" aria-expanded="false"
-          aria-controls="accordion-flush-body-6">
-          <span>
-            Are the guidance and mentorship provided by Doer personalized?
-          </span>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="accordion-flush-body-6" class="hidden"
-        aria-labelledby="accordion-flush-heading-6">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
-            Yes, at Doer, we believe in personalized support. Our guidance and
-            mentorship programs are designed to address the unique challenges
-            and goals of each entrepreneur or startup. We understand that every
-            business is different, and we strive to provide tailored advice and
-            assistance.
-          </p>
-        </div>
-      </div>
-      <h2 id="accordion-flush-heading-7">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
-          data-accordion-target="#accordion-flush-body-7" aria-expanded="false"
-          aria-controls="accordion-flush-body-7">
-          <span>Can Doer help with funding for my business? </span>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="accordion-flush-body-7" class="hidden"
-        aria-labelledby="accordion-flush-heading-7">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
-            While Doer does not directly provide funding, we can offer guidance
-            on different funding options and connect you with relevant
-            resources, such as investors, grants, or crowdfunding platforms.
-            We'll help you understand the process and increase your chances of
-            securing funding for your business.
-          </p>
-        </div>
-      </div>
-      <h2 id="accordion-flush-heading-8">
-        <button type="button"
-          class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
-          data-accordion-target="#accordion-flush-body-8" aria-expanded="false"
-          aria-controls="accordion-flush-body-8">
-          <span>How can I access the marketing services offered by Doer? </span>
-          <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </h2>
-      <div id="accordion-flush-body-8" class="hidden"
-        aria-labelledby="accordion-flush-heading-8">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
-            Once you become a member of Doer, you'll have access to our
-            marketing services. You can discuss your marketing needs with our
-            team, and they will work with you to develop a customized marketing
-            strategy. This may include social media marketing, search engine
-            optimization (SEO), content creation, and other techniques to
-            promote your business effectively.
-          </p>
-        </div>
+        data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+        <span>What does Doer do?</span>
+        <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
+          Doer is a company that provides guidance, resources, and marketing
+          support to new entrepreneurs and startups to help them grow their
+          businesses.
+        </p>
       </div>
     </div>
-
-    <!-- contact us -->
-    <section class="text-gray-600 body-font relative">
-      <div class="container px-5 py-24 mx-auto flex xl:flex-row md:flex-col sm:flex-col flex-col center-content">
-        <div class="lg:w-1/3 md:w-1/2 flex flex-col w-full md:py-8 mt-8 md:mt-0 p-10 bg-gray-800">
-          <h2 class="text-indigo-400 text-4xl mb-1 title-font">Feedback</h2>
-          <p class="leading-relaxed mb-5">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
-          <div class="relative mb-4">
-            <label for="name" class="leading-7 text-sm text-white">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <div class="relative mb-4">
-            <label for="email" class="leading-7 text-sm text-white">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              style="background-image: url('data:image/png;base64,iVBORw0KG...'); background-repeat: no-repeat; background-size: 20px; background-position: 97% center; cursor: auto;"
-              data-temp-mail-org="0"
-            />
-          </div>
-          <div class="relative mb-4">
-            <label for="message" class="leading-7 text-sm text-white">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-            ></textarea>
-          </div>
-          <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-          <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
-        </div>
-        <div class="mt-4 md:mt-0 md:ml-8">
-          <img src="/src/images/contact.png" alt="Contact Image" class="w-auto h-auto">
-        </div>
+    <h2 id="accordion-flush-heading-2">
+      <button type="button"
+        class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+        data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+        <span>How do I get started with Doer?</span>
+        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
+          To get started with Doer, simply visit our website and sign up for
+          an account. Once you've created an account, you can explore the
+          available resources, access guidance materials, and start utilizing
+          our marketing services.
+        </p>
       </div>
-    </section>
-
-    <!--footer-->
-    <footer class="text-gray-600 body-font bg-gray-900">
-      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <img src="./src/images/logo.png" class="h-10"/>
-          <span class="ml-3 text-xl text-gray-100">Doer Global</span>
-        </a>
-        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 DoerGlobal</p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a class="ml-3 text-gray-500"  href="https://twitter.com/doerglobal">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500" href="https://www.instagram.com/startup.doer/">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/doer-global/">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
+    </div>
+    <h2 id="accordion-flush-heading-3">
+      <button type="button"
+        class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+        data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+        <span>How can Doer help me as a new entrepreneur/startup?</span>
+        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
+          Doer can assist you in various ways. We offer personalized guidance
+          and mentorship to help you navigate the challenges of starting and
+          growing a business. Additionally, we provide access to a range of
+          resources, such as business templates, market research data, and
+          industry insights. Furthermore, our marketing services can help you
+          promote your products or services effectively.
+        </p>
+      </div>
+    </div>
+    <h2 id="accordion-flush-heading-4">
+      <button type="button"
+        class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+        data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+        <span>Is Doer only for new entrepreneurs, or can established
+          businesses
+          benefit as well?
         </span>
+        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
+          While Doer primarily focuses on assisting new entrepreneurs and
+          startups, our services can also benefit established businesses. We
+          offer resources and marketing support that can help businesses at
+          different stages of their growth journey.
+        </p>
       </div>
-    </footer>
+    </div>
+    <h2 id="accordion-flush-heading-5">
+      <button type="button"
+        class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+        data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
+        <span>What types of businesses does Doer cater to? </span>
+        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
+          Doer caters to a wide range of businesses across various industries.
+          Whether you're starting a tech startup, a retail business, a
+          consulting firm, or any other type of business, our guidance and
+          resources can be tailored to your specific needs.
+        </p>
+      </div>
+    </div>
+    <h2 id="accordion-flush-heading-6">
+      <button type="button"
+        class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+        data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-6">
+        <span>
+          Are the guidance and mentorship provided by Doer personalized?
+        </span>
+        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
+          Yes, at Doer, we believe in personalized support. Our guidance and
+          mentorship programs are designed to address the unique challenges
+          and goals of each entrepreneur or startup. We understand that every
+          business is different, and we strive to provide tailored advice and
+          assistance.
+        </p>
+      </div>
+    </div>
+    <h2 id="accordion-flush-heading-7">
+      <button type="button"
+        class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+        data-accordion-target="#accordion-flush-body-7" aria-expanded="false" aria-controls="accordion-flush-body-7">
+        <span>Can Doer help with funding for my business? </span>
+        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
+          While Doer does not directly provide funding, we can offer guidance
+          on different funding options and connect you with relevant
+          resources, such as investors, grants, or crowdfunding platforms.
+          We'll help you understand the process and increase your chances of
+          securing funding for your business.
+        </p>
+      </div>
+    </div>
+    <h2 id="accordion-flush-heading-8">
+      <button type="button"
+        class="flex items-center justify-between w-full py-5 sm:text-lg xl:text-2xl lg:text-2xl md\:text-2xl text-xl text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 p-5 mb-5 bg-gray-800"
+        data-accordion-target="#accordion-flush-body-8" aria-expanded="false" aria-controls="accordion-flush-body-8">
+        <span>How can I access the marketing services offered by Doer? </span>
+        <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-flush-body-8" class="hidden" aria-labelledby="accordion-flush-heading-8">
+      <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <p class="mb-2 text-gray-100 dark:text-gray-100 p-5 sm:text-md lg:text-xl xl:text-xl md:text-md text-md">
+          Once you become a member of Doer, you'll have access to our
+          marketing services. You can discuss your marketing needs with our
+          team, and they will work with you to develop a customized marketing
+          strategy. This may include social media marketing, search engine
+          optimization (SEO), content creation, and other techniques to
+          promote your business effectively.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact us -->
+  <section class="text-gray-600 body-font relative">
+    <div class="container px-5 py-24 mx-auto flex xl:flex-row md:flex-col sm:flex-col flex-col center-content">
+      <div class="lg:w-1/3 md:w-1/2 flex flex-col w-full md:py-8 mt-8 md:mt-0 p-10 bg-gray-800">
+        <h2 class="text-indigo-400 text-4xl mb-1 title-font">Feedback</h2>
+        <p class="leading-relaxed mb-5">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+        <div class="relative mb-4">
+          <label for="name" class="leading-7 text-sm text-white">Name</label>
+          <input type="text" id="name" name="name"
+            class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-white">Email</label>
+          <input type="email" id="email" name="email"
+            class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            style="background-image: url('data:image/png;base64,iVBORw0KG...'); background-repeat: no-repeat; background-size: 20px; background-position: 97% center; cursor: auto;"
+            data-temp-mail-org="0" />
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-white">Message</label>
+          <textarea id="message" name="message"
+            class="w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        </div>
+        <button
+          class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.
+        </p>
+      </div>
+      <div class="mt-4 md:mt-0 md:ml-8">
+        <img src="/src/images/contact.png" alt="Contact Image" class="w-auto h-auto">
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="text-gray-600 body-font bg-gray-900">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="./src/images/logo.png" class="h-10" />
+        <span class="ml-3 text-xl text-gray-100">Doer Global</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023
+        DoerGlobal</p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="ml-3 text-gray-500" href="https://twitter.com/doerglobal">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.instagram.com/startup.doer/">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/doer-global/">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
 
 
 
-    <!-- Script tags -->
+  <!-- Script tags -->
 
-    <script>
-if (window.location.pathname === "/ideation/") {
-    window.location.href = "/ideation/index.html";
-}
-</script>
-    <!-- flowbite -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
-    <!--our teams js dependencies-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-    <!--testimonials-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!--tailwind CDN-->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FAQ -->
-    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
-    <!-- js script -->
-    <script src="./src/js/java.js"></script>
-  </body>
+  <script>
+    if (window.location.pathname === "/ideation/") {
+      window.location.href = "/ideation/index.html";
+    }
+  </script>
+  <!-- flowbite -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+  <!--our teams js dependencies-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <!--testimonials-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!--tailwind CDN-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FAQ -->
+  <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+  <!-- js script -->
+  <script src="./src/js/java.js"></script>
+</body>
 
 </html>
