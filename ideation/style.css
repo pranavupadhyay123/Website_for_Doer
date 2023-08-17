@@ -39,7 +39,7 @@ body {
 }
 
 .heading {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 400;
   color: #000000;
   text-align: center;
@@ -370,7 +370,7 @@ body a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   background-color: #3660aa;
 }
 
