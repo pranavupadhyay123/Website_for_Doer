@@ -420,6 +420,10 @@ body a {
     margin: 0%;
   }
 
+  .timeline__slides{
+    border-radius: 0%;
+  }
+
   .timeline__icon--active {
     margin: 0%;
   }
