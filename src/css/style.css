@@ -270,8 +270,8 @@ a {
 /* Chatbot */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 .botIcon {
-  bottom: 15px;
-  left: 15px;
+  bottom: 25px;
+  left: 25px;
   position: fixed;
   z-index: 9999;
 }
